@@ -17,3 +17,9 @@
 * [Конфигурация Cardano ноды](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Запуск ноды Кардано](cardano-node-configuration-1/zapusk-nody-kardano.md)
 
+## Translations and Cardano Articles / Переводы и статьи Cardano <a id="translations-and-cardano-articles"></a>
+
+---
+
+* [Как начать с стейкингом в сети Cardano](kak-nachat-s-steikingom-v-seti-cardano.md)
+
