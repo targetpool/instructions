@@ -21,5 +21,5 @@
 
 ---
 
-* [Как начать с стейкингом в сети Cardano](kak-nachat-s-steikingom-v-seti-cardano.md)
+* [Как начать cтейкать ADA в сети Cardano](kak-nachat-s-steikingom-v-seti-cardano.md)
 
