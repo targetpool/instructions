@@ -30,7 +30,7 @@
 
 ![](../.gitbook/assets/image%20%2813%29.png)
 
-#### Нажимаем  Generate Droplet
+#### Даем имя скрверу Relay1 Нажимаем  Generate Droplet
 
 ![](../.gitbook/assets/image%20%2814%29.png)
 
