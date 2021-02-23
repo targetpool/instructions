@@ -20,11 +20,19 @@
 
 Открываем PUTTY KEY GEN нажимаем на кнопку Generate  т двигаем мышкой пока не сгенерится ключ.
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
  Копируем сгенерированый ключ и устанавливаем для него надёжный пароль.
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
+
+#### Нажимаем на кнопку  New SSH key и копируем ключ который сгенерировали в Putty
+
+![](../.gitbook/assets/image%20%2813%29.png)
+
+#### Нажимаем  Generate Droplet
+
+![](../.gitbook/assets/image%20%2814%29.png)
 
 для подключения к вашему новому серверу мы будем использовать PUTTY Client
 
