@@ -10,9 +10,21 @@
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
+    
+  
+Выберете  датацентр. где будут распологаться ваши серверы
+
+![](../.gitbook/assets/server%20%281%29.jpg)
+
 Далее вы хотите создать вход в систему, используя SSH ключ, не используйте пароли. Для генерации SSH-ключа можно использовать PUTTY. [https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe)
 
+Открываем PUTTY KEY GEN нажимаем на кнопку Generate  т двигаем мышкой пока не сгенерится ключ.
 
+![](../.gitbook/assets/image%20%2811%29.png)
+
+ Копируем сгенерированый ключ и устанавливаем для него надёжный пароль.
+
+![](../.gitbook/assets/image%20%286%29.png)
 
 для подключения к вашему новому серверу мы будем использовать PUTTY Client
 
