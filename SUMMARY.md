@@ -23,4 +23,5 @@
 
 * [Как начать cтейкать ADA в сети Cardano](kak-nachat-s-steikingom-v-seti-cardano.md)
 * [Почему проект Кардано Важен](pochemu-proekt-kardano-vazhen.md)
+* [Who will maintain Cardano](who-will-maintain-cardano.md)
 
