@@ -16,9 +16,9 @@
 
 ![](../.gitbook/assets/server%20%281%29.jpg)
 
-Далее вы хотите создать вход в систему, используя SSH ключ, не используйте пароли. Для генерации SSH-ключа можно использовать PUTTY. [https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe)
+Далее нужно создать вход в систему, используя SSH ключ, не используйте пароли. Для генерации SSH-ключа можно использовать PUTTY. [https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe)
 
-Открываем PUTTY KEY GEN нажимаем на кнопку Generate  т двигаем мышкой пока не сгенерится ключ.
+Открываем PUTTY KEY GEN нажимаем на кнопку Generate  и двигаем мышкой пока не сгенерится ключ.
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
@@ -30,7 +30,7 @@
 
 ![](../.gitbook/assets/image%20%2813%29.png)
 
-#### Даем имя скрверу Relay1 Нажимаем  Generate Droplet
+#### Даем имя серверу Relay1 Нажимаем  Generate Droplet
 
 ![](../.gitbook/assets/image%20%2814%29.png)
 
