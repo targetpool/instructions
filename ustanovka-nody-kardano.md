@@ -63,6 +63,12 @@ cabal build all
 
 давайте скопируем скомпилированные файлы bin \(executive\) в папку, которую мы ранее создали: .local/bin
 
+#### Теперь нам нужно выключить сервер и сделать снэпшот машины
+
+sudo shutdown -h now
+
+![](.gitbook/assets/image%20%2817%29.png)
+
 ```text
 mkdir -p ~/.local/bin/
 cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.25.1/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
