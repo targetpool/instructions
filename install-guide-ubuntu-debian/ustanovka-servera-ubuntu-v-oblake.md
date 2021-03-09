@@ -26,11 +26,11 @@
 
 ![](../.gitbook/assets/image%20%287%29.png)
 
-#### Нажимаем на кнопку  New SSH key и копируем ключ который сгенерировали в Putty
+Нажимаем на кнопку  New SSH key и копируем ключ который сгенерировали в Putty
 
 ![](../.gitbook/assets/image%20%2813%29.png)
 
-#### Даем имя серверу Relay1 Нажимаем  Generate Droplet
+Даем имя серверу Relay1 Нажимаем  Generate Droplet
 
 ![](../.gitbook/assets/image%20%2814%29.png)
 
@@ -38,27 +38,27 @@
 
 [https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe)
 
-#### Указываем путь к вашему ключу
+Указываем путь к вашему ключу
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-#### Подключаемся к Public IP через Putty и вводим пароль от SSH
+Подключаемся к Public IP через Putty и вводим пароль от SSH
 
 ![](../.gitbook/assets/image%20%2820%29.png)
 
-#### Создаем пользователя Cardano
+Создаем пользователя Cardano
 
 ```text
 sudo adduser cardano
 ```
 
-#### Даем пользователю админ права
+Даем пользователю админ права
 
 ```text
 sudo usermod -aG sudo cardano
 ```
 
-#### Подключаем SSH Ключи для нового пользователя
+Подключаем SSH Ключи для нового пользователя
 
 Создаем директорию где будет храниться ключ 
 
@@ -66,13 +66,13 @@ sudo usermod -aG sudo cardano
 mkdir /home/example_user/.ssh
 ```
 
-#### Создаем файл и копируем туда наш SSH ключ, сохраняем и выходим
+Создаем файл и копируем туда наш SSH ключ, сохраняем и выходим
 
 ```text
 mkdir /home/example_user/.ssh
 ```
 
-#### Даем пользователю права на использование SSH ключа
+Даем пользователю права на использование SSH ключа
 
 ```text
 chown -R cardano:cardano /home/cardano/.ssh
