@@ -38,3 +38,44 @@
 
 [https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe)
 
+#### Указываем путь к вашему ключу
+
+![](../.gitbook/assets/image%20%2818%29.png)
+
+#### Подключаемся к Public IP через Putty и вводим пароль от SSH
+
+![](../.gitbook/assets/image%20%2820%29.png)
+
+#### Создаем пользователя Cardano
+
+```text
+sudo adduser cardano
+```
+
+#### Даем пользователю админ права
+
+```text
+sudo usermod -aG sudo cardano
+```
+
+#### Подключаем SSH Ключи для нового пользователя
+
+Создаем директорию где будет храниться ключ 
+
+```text
+mkdir /home/example_user/.ssh
+```
+
+#### Создаем файл и копируем туда наш SSH ключ, сохраняем и выходим
+
+```text
+mkdir /home/example_user/.ssh
+```
+
+#### Даем пользователю права на использование SSH ключа
+
+```text
+chown -R cardano:cardano /home/cardano/.ssh
+chmod 600 /home/cardano/.ssh/authorized_keys
+```
+
