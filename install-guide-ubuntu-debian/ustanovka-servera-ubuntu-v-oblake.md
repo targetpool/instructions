@@ -79,3 +79,35 @@ chown -R cardano:cardano /home/cardano/.ssh
 chmod 600 /home/cardano/.ssh/authorized_keys
 ```
 
+Создаем swap file 10G
+
+```text
+sudo fallocate -l 10G /swapfile
+```
+
+Даем права на swap file 
+
+```text
+sudo chmod 600 /swapfile
+```
+
+Маркиркируем и активируем SWAP file
+
+```text
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+```
+
+Делаем бэкап
+
+```text
+sudo swapon /swapfile
+```
+
+Делаем swap file постоянным
+
+```text
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
+
