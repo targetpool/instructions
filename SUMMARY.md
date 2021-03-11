@@ -25,4 +25,5 @@
 * [Почему проект Кардано Важен](pochemu-proekt-kardano-vazhen.md)
 * [Кто будет обслуживать Кардано](who-will-maintain-cardano.md)
 * [Почему Кардано не нуждается в слэшинге](slashing.md)
+* [Алонзо приносит в Cardano "умные" контракты.](alonzo-prinosit-v-cardano-umnye-kontrakty..md)
 
