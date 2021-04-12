@@ -1,10 +1,10 @@
-# Установка Cabal, GHC, Libsodium
+# Install Cabal, GHC, Libsodium
 
-Подключаемся к серверу с пользователем Cardano, root - больше не используем
+Now we need to connect to the server with our newly created user  Cardano, root - we will no longer be using
 
 ![](.gitbook/assets/image%20%2819%29.png)
 
-Чтобы успешно установить \(скомпилировать\) кардано, мы должны быть уверены, что у нас есть все необходимые обновления! Чтобы скачать и установить их, введите следующие команды:
+Now you want to download and install all of the updates
 
 ```
 sudo apt-get update -y
@@ -18,7 +18,7 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
 ## Установка  Cabal
 
-Мы будем устанавливать Cardano с помощью Cabal. Мы используем рекомендованную версию 3.2.0.0 и установим ее в нашу локальную папку bin \(.local/bin\).
+e will install Cardano with Cabal. We will use the recommended version 3.2.0.0 and install it in our local bin folder \(.local/bin\).
 
 ```bash
 wget https://downloads.haskell.org/~cabal/cabal-install-3.2.0.0/cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz
@@ -28,7 +28,7 @@ mkdir -p ~/.local/bin
 mv cabal ~/.local/bin/
 ```
 
-Теперь у вас должна быть установлена программа cabal в папке ~/.local/bin/, теперь мы просто должны убедиться, что система также может найти файл cabal bin\(executive\). Давайте добавим эту информацию в наш файл пользовательского профиля \(.bashrc\), перезагрузим его \(используя команду исходного кода\), и проверим, видим ли мы в списке нашу папку ~/.local/bin/.
+Now you should have cabal installed in the ~/.local/bin/ folder, now we just have to make sure the system can find the cabal bin\(executive\) file too. Let's add this information to our user profile file \(.bashrc\), reload it \(using the source code command\), and check if we see our ~/.local/bin/ folder listed.
 
 ```bash
 echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc 
@@ -36,14 +36,14 @@ source ~/.bashrc
 echo $PATH
 ```
 
-Теперь давайте проверим, установлена ли последняя версия пакета Cabal.
+Now let's check if the latest version of the Cabal package is installed.
 
 ```bash
 cabal update
 cabal --version
 ```
 
-вы должны увидеть что-то вроде этого:
+you should see something like this
 
 > **cardano@localhost**:**~**$  cabal update  
 > cabal --version  
@@ -55,9 +55,9 @@ cabal --version
 > **cabal-install version 3.2.0.0  
 > compiled using version 3.2.0.0 of the Cabal library**
 
-## Установка  GHC
+## Installing  GHC
 
-Перейдем к следующим шагам - установка GHC - компилятора кода Haskell \(Cardano, написан на Haskell \)
+Let's move on to the next steps - installing GHC - the Haskell code compiler \(Cardano is written in Haskell \)
 
 ```bash
 mkdir -p ~/git
@@ -71,26 +71,26 @@ cd ghc-8.10.2
 sudo make install
 ```
 
-давайте убедимся, что всё установлено правильно**:**
+lets make sure that everything is installed correctly**:**
 
 ```bash
 ghc --version
 ```
 
-вы должны увидеть что-то вроде этого:
+you should see something like this:
 
 > cardano@localhost:~$ **ghc --version**  
 > The Glorious Glasgow Haskell Compilation System, version 8.10.2
 
-## Установка  Libsodium
+## Installing  Libsodium
 
-Создадим папку git, в которой будем компилировать исходный код библиотеки libsodium:
+Create folder git, in which we will compile libsodium library:
 
 ```bash
 cd ~/git
 ```
 
-Скачаем и установим библиотеку libsodium \(нам нужна конкретная ветка библиотеки, поэтому следуйте указаниям руководства\).
+Download and install the libsodium library \(we need a specific branch of the library, so follow the manual\).
 
 ```bash
 git clone https://github.com/input-output-hk/libsodium
@@ -102,7 +102,7 @@ make
 sudo make install
 ```
 
-Давайте добавим следующий путь к нашему файлу .bashrc
+Now we need to specify the following path to our .bashrc file
 
 ```bash
 echo "export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH" >> ~/.bashrc

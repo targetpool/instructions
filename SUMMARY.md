@@ -9,12 +9,12 @@
 
 ---
 
-* [Установка Cabal, GHC, Libsodium](ustanovka-cabal-ghc-libsodium.md)
-* [Установка ноды кардано](ustanovka-nody-kardano.md)
+* [Install Cabal, GHC, Libsodium](ustanovka-cabal-ghc-libsodium.md)
+* [Cardano Node Installation](ustanovka-nody-kardano.md)
 
 ## Cardano Node Configuration <a id="cardano-node-configuration-1"></a>
 
-* [Конфигурация Cardano ноды](cardano-node-configuration-1/cardano-node-configuration.md)
+* [Configuration of the Cardano node](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Запуск ноды Кардано](cardano-node-configuration-1/zapusk-nody-kardano.md)
 
 ## Translations and Cardano Articles / Переводы и статьи Cardano <a id="translations-and-cardano-articles"></a>

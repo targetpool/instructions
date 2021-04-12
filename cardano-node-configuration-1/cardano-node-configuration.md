@@ -1,6 +1,6 @@
-# Конфигурация Cardano ноды
+# Configuration of the Cardano node
 
-Давайте начнем с создания директорий для нашей ноды:
+Let's start by creating directories for our node:
 
 ```text
 cd 
@@ -10,7 +10,7 @@ mkdir -p config db sockets keys logs scripts
 cd config
 ```
 
-Давайте скачаем файлы конфигурации
+Let's download the configuration files
 
 ```text
 #checking the latest built for configs
@@ -24,7 +24,7 @@ wget -q -O mainnet-topology.json https://hydra.iohk.io/build/${LAST_BUILD}/downl
 ls -al mainnet*
 ```
 
-Ваш блок-продюсер \(БП\) должен связываться только с вашими реле. Ваши реле должны взаимодействовать с другими реле и вашим \( БП\).Все это настраивается в файле mainnet-topology.json. Ниже приведен пример для реле
+Your block producer \( BP\) must only communicate with your relays. Your relays must communicate with other relays and your \( BP\).All this is configured in the file mainnet-topology.json. Here is an example for relays
 
 ```text
 cat > mainnet-topology.json << EOF
@@ -50,11 +50,11 @@ cat > mainnet-topology.json << EOF
 EOF
 ```
 
-Ваши реле должны быть на другом порту, нежели ваш БП. давайте настроим ваши реле на порт 3000 и вашего продюсера на порт 3001. когда вы запустите эту команду на продюсере, измените порт на 3001.
+Your relays should be on a different port than your PSU. let's set your relays to port 3000 and your producer to port 3001. when you run this command on the producer, change the port to 3001.
 
 ```text
 cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 3000 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
 ```
 
-Если вы видите цветной текст, ваш нод был правильно сконфигурирован. Теперь вы можете отменить процесс, нажав Cntl+C
+If you see colored text, your node has been configured correctly. Now you can cancel the process by pressing Cntl+C
 
