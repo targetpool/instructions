@@ -1,4 +1,4 @@
-# Руководство по установке Cardano ноды 1.25.1
+# Cardano node 1.26.1 Installation Instructions
 
 ## Руководство по установке Cardano ноды 1.25.1 \(MainNet\) для чайников.
 
