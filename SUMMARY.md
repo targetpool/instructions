@@ -5,7 +5,7 @@
 
 ## Install Guide Ubuntu/Debian
 
-* [Установка сервера Ubuntu в облаке](install-guide-ubuntu-debian/ustanovka-servera-ubuntu-v-oblake.md)
+* [Ubuntu server cloud installation](install-guide-ubuntu-debian/ustanovka-servera-ubuntu-v-oblake.md)
 
 ---
 
