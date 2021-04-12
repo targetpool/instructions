@@ -1,12 +1,12 @@
-# Запуск ноды Кардано
+# Launch of the Cardano node
 
-Ранее мы запустили реле в активной ssh сессии, что означает, что как только мы закроем браузер, узел перестанет работать.поэтому нам нужно запустить его из TMUX.
+Earlier we started the relay in an active ssh session, which means that as soon as we close the browser, the node will stop working.So we need to start it from TMUX.
 
 ```text
 cd ~/cnode/scripts/
 ```
 
-Давайте создадим скрипты
+Let's create scripts
 
 {% tabs %}
 {% tab title="start\_all.sh" %}
@@ -79,20 +79,20 @@ nano node.sh
 chmod +x start_all.sh stop_all.sh node.sh
 ```
 
-давайте скопируем их в папку со Скриптами.
+Let's copy them into the Scripts folder.
 
 ```text
 cp *.sh ~/cnode/scripts/
 ```
 
-После создания этих сценариев вам нужно будет сделать их исполняемыми с помощью команды chmod
+After creating these scripts, you will need to make them executable by using the chmod command
 
 ```text
 cd ~/cnode/scripts/
 chmod +x start_all.sh stop_all.sh node.sh
 ```
 
-Теперь мы запускаем ноду в TMUX.
+Now we start a node in TMUX.
 
 ```text
 ./start_all.sh
