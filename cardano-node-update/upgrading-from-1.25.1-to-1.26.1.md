@@ -99,7 +99,7 @@ if you want to connect to server with ssh \(replace also the public key with you
 scp -i ~/.ssh/id_rsa archive.tar.gz cardano@your_ip:.
 ```
 
-then **connect to the server** where you copied the files and untar \(unzip\) the files using the following command:
+now you need to unzip the files on the server where you copied them to
 
 ```text
 tar -xvf archive.tar.gz 
