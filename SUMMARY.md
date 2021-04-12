@@ -27,3 +27,7 @@
 * [Почему Кардано не нуждается в слэшинге](slashing.md)
 * [Алонзо приносит в Cardano "умные" контракты.](alonzo-prinosit-v-cardano-umnye-kontrakty..md)
 
+## CARDANO NODE UPDATE
+
+* [Upgrading from 1.25.1 to 1.26.1](cardano-node-update/upgrading-from-1.25.1-to-1.26.1.md)
+
