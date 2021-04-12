@@ -1,22 +1,12 @@
-# Руководство по установке Cardano ноды 1.26.1
+# Cardano Node Installation Guide 1.25.1 1.26.1
 
-## Руководство по установке Cardano ноды 1.25.1 \(MainNet\) для чайников.
+Cardano Node Installation Guide 1.25.1 \(MainNet\) for Dummies.
 
-Большая часть инструкции переведена с английского языка, но после установки наших нод мы ее сильно откорректировали.
+1\) This guide assumes that you have at least a basic knowledge of Linux administration. 2\) We will use Ubuntu as our operating system of choice.
 
-1\) В данном руководстве предполагается, что вы обладаете, по крайней мере, базовыми знаниями по администрированию Linux. 
+also excellent resources on the Internet Cardano Community Technical Support [https://t.me/CardanoCommunityTechSupport](https://t.me/CardanoCommunityTechSupport)
 
-2\) Мы будем использовать Ubuntu как наш выбор для операционной системы.  
-  
-
-
-* также отличные ресурсы в интернете, но, к сожалению, они на английском языке.  [https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node](https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node)   [https://guides.poapool.com](https://guides.poapool.com) 
-* Рабочая группа Cardano Shelley & StakePool Best Practice [https://t.me/CardanoStakePoolWorkgroup](https://t.me/CardanoStakePoolWorkgroup). 
-* Техническая поддержка сообщества Cardano  [https://t.me/CardanoCommunityTechSupport](https://t.me/CardanoCommunityTechSupport) 
-
-Это руководство основано на официальном руководстве Cardano и нашем опыте. Я понимаю, что в интернете много разрозненной информации, поэтому я создал этот путеводитель, где можно найти все в одном месте.
-
-В вашей установке должно быть как минимум 2 сервера и автономная машина, в идеале 3 сервера и автономный компьютер \(1 БП, 2 реле и автономный компьютер\)
+This guide is based on the official Cardano guide and our experience. I realize that there is a lot of scattered information on the internet, so I created this guide where you can find everything in one place. Your setup should have at least 2 servers and a standalone machine, ideally 3 servers and a standalone computer \(1 PSU, 2 relays and a standalone computer\)
 
 ![](.gitbook/assets/image.png)
 

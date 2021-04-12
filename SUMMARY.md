@@ -1,7 +1,7 @@
 # Table of contents
 
 * [instructions](README.md)
-* [Руководство по установке Cardano ноды 1.26.1](rukovodstvo-po-ustanovke-cardano-nody-1.26.1.md)
+* [Cardano Node Installation Guide 1.25.1 1.26.1](rukovodstvo-po-ustanovke-cardano-nody-1.26.1.md)
 
 ## Install Guide Ubuntu/Debian
 
