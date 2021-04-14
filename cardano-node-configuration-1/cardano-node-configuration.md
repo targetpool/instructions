@@ -1,6 +1,6 @@
-# Конфигурация Cardano ноды
+# Konfiguration des Cardano Node
 
-Давайте начнем с создания директорий для нашей ноды:
+Beginnen wir damit, die Verzeichnisse für unseren Knoten zu erstellen:
 
 ```text
 cd 
@@ -10,7 +10,7 @@ mkdir -p config db sockets keys logs scripts
 cd config
 ```
 
-Давайте скачаем файлы конфигурации
+Lassen Sie uns die Konfigurationsdateien herunterladen
 
 ```text
 #checking the latest built for configs
@@ -24,7 +24,7 @@ wget -q -O mainnet-topology.json https://hydra.iohk.io/build/${LAST_BUILD}/downl
 ls -al mainnet*
 ```
 
-Ваш блок-продюсер \(БП\) должен связываться только с вашими реле. Ваши реле должны взаимодействовать с другими реле и вашим \( БП\).Все это настраивается в файле mainnet-topology.json. Ниже приведен пример для реле
+Ihr Blockproducer \(BP\) darf nur mit Ihren Relais kommunizieren. Ihre Relais müssen mit anderen Relais und Ihrem \(BP\) kommunizieren, was in der Datei mainnet-topology.json konfiguriert wird. Nachfolgend finden Sie ein Beispiel für ein Relais
 
 ```text
 cat > mainnet-topology.json << EOF
@@ -50,11 +50,11 @@ cat > mainnet-topology.json << EOF
 EOF
 ```
 
-Ваши реле должны быть на другом порту, нежели ваш БП. давайте настроим ваши реле на порт 3000 и вашего продюсера на порт 3001. когда вы запустите эту команду на продюсере, измените порт на 3001.
+Ihre Relais sollten an einem anderen Port liegen als Ihr Netzteil. Setzen wir Ihre Relais auf Port 3000 und Ihren Producer auf Port 3001. Wenn Sie diesen Befehl auf dem Producer ausführen, ändern Sie den Port auf 3001.
 
 ```text
 cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 3000 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
 ```
 
-Если вы видите цветной текст, ваш нод был правильно сконфигурирован. Теперь вы можете отменить процесс, нажав Cntl+C
+Wenn Sie farbigen Text sehen, wurde Ihr Knoten korrekt konfiguriert. Jetzt können Sie den Vorgang mit der Tastenkombination Strg+C abbrechen
 

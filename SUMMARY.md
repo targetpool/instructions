@@ -3,7 +3,7 @@
 * [instructions](README.md)
 * [Cardano Node Installationsanleitung 1.26.1](rukovodstvo-po-ustanovke-cardano-nody-1.26.1.md)
 
-## Install Guide Ubuntu/Debian
+## Installationsanleitung Ubuntu/Debian <a id="install-guide-ubuntu-debian"></a>
 
 * [Installieren eines Ubuntu-Servers in der Cloud](install-guide-ubuntu-debian/ustanovka-servera-ubuntu-v-oblake.md)
 
@@ -12,9 +12,9 @@
 * [Installieren Cabal, GHC, Libsodium](ustanovka-cabal-ghc-libsodium.md)
 * [Cardano Node Instalation](ustanovka-nody-kardano.md)
 
-## Cardano Node Configuration <a id="cardano-node-configuration-1"></a>
+## Konfiguration des Cardano Node <a id="cardano-node-configuration-1"></a>
 
-* [Конфигурация Cardano ноды](cardano-node-configuration-1/cardano-node-configuration.md)
+* [Konfiguration des Cardano Node](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Запуск ноды Кардано](cardano-node-configuration-1/zapusk-nody-kardano.md)
 
 ## Translations and Cardano Articles / Переводы и статьи Cardano <a id="translations-and-cardano-articles"></a>
