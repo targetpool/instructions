@@ -15,7 +15,7 @@
 ## Konfiguration des Cardano Node <a id="cardano-node-configuration-1"></a>
 
 * [Konfiguration des Cardano Node](cardano-node-configuration-1/cardano-node-configuration.md)
-* [Запуск ноды Кардано](cardano-node-configuration-1/zapusk-nody-kardano.md)
+* [Ausführen eines Cardano Node](cardano-node-configuration-1/zapusk-nody-kardano.md)
 
 ## Translations and Cardano Articles / Переводы и статьи Cardano <a id="translations-and-cardano-articles"></a>
 
