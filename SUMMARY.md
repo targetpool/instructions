@@ -17,13 +17,3 @@
 * [Konfiguration des Cardano Node](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Ausführen eines Cardano Node](cardano-node-configuration-1/zapusk-nody-kardano.md)
 
-## Translations and Cardano Articles / Переводы и статьи Cardano <a id="translations-and-cardano-articles"></a>
-
----
-
-* [Как начать cтейкать ADA в сети Cardano](kak-nachat-s-steikingom-v-seti-cardano.md)
-* [Почему проект Кардано Важен](pochemu-proekt-kardano-vazhen.md)
-* [Кто будет обслуживать Кардано](who-will-maintain-cardano.md)
-* [Почему Кардано не нуждается в слэшинге](slashing.md)
-* [Алонзо приносит в Cardano "умные" контракты.](alonzo-prinosit-v-cardano-umnye-kontrakty..md)
-
