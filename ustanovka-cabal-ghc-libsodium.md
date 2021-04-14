@@ -55,7 +55,7 @@ sollten Sie etwas Ähnliches sehen:
 > **cabal-install version 3.2.0.0  
 > compiled using version 3.2.0.0 of the Cabal library**
 
-## Установка  GHC
+## GHC Installation
 
 Gehen wir zu den nächsten Schritten über - Installation von GHC - dem Haskell-Code-Compiler \(Cardano, geschrieben in Haskell \)
 
@@ -82,7 +82,7 @@ sollten Sie etwas Ähnliches sehen:
 > cardano@localhost:~$ **ghc --version**  
 > The Glorious Glasgow Haskell Compilation System, version 8.10.2
 
-## Установка  Libsodium
+## Libsodium Installation
 
 Erstellen Sie einen Git-Ordner, in dem Sie den Quellcode der libsodium-Bibliothek kompilieren:
 

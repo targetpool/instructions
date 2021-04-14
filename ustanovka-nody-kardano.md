@@ -1,6 +1,6 @@
-# Установка ноды кардано
+# Cardano Node Instalation
 
-Давайте начнем с загрузки исходного кода Cardano Node из git \(github\).
+Beginnen wir mit dem Herunterladen des Cardano Node-Quellcodes von git \(github\).
 
 ```text
 cd ~/git
@@ -16,7 +16,7 @@ git clone https://github.com/input-output-hk/cardano-node.git
 > Receiving objects: 100% \(17996/17996\), 5.66 MiB \| 1.62 MiB/s, done.  
 > Resolving deltas: 100% \(11955/11955\), done.
 
-Теперь у вас должна быть новая папка - cardano-node с исходным кодом ноды cardano, давайте перейдем в эту папку и выберем, какую версию мы хотим установить \(скомпилировать\).
+Jetzt sollten Sie einen neuen Ordner haben - cardano-node mit dem Quellcode des cardano-Knotens. Gehen wir in diesen Ordner und wählen wir die Version aus, die wir installieren \(kompilieren\) wollen.
 
 ```text
 cd cardano-node
@@ -35,37 +35,33 @@ git fetch --all --recurse-submodules --tags
 > .......  
 > 1.25.1
 
-\(на момент написания данной инструкции\) последняя версия Mainnet Tag - 1.26.1, так что давайте ее скачаем!
+\(zum Zeitpunkt dieses Schreibens\) ist die neueste Version von Mainnet Tag 1.26.1, also laden wir sie herunter!
 
 ```text
  git checkout tags/1.26.1
 ```
 
-Давайте установим с помощью GHC.
+Lassen Sie uns das mit GHC einrichten.
 
 ```text
 cabal configure --with-compiler=ghc-8.10.2
 ```
 
-Начиная с версии 1.14.x, нам нужно добавить библиотеки libsodium на ноду Cardano, так что давайте это сделаем.
+Ab Version 1.14.x müssen wir die libsodium-Bibliotheken zum Cardano-Knoten hinzufügen, also lassen Sie uns das tun.
 
 ```text
 echo "package cardano-crypto-praos" >>  cabal.project.local
 echo "  flags: -external-libsodium-vrf" >>  cabal.project.local
 ```
 
-По каким-то причинам мое SSH-соединение часто прерывается на этом этапе, поэтому давайте запустим TMUX, и там мы начнем установку. Это займет несколько часов
+Aus irgendeinem Grund wird meine SSH-Verbindung an dieser Stelle oft unterbrochen, also starten wir TMUX und die Installation. Dies wird ein paar Stunden dauern
 
 ```text
 tmux
 cabal build all
 ```
 
-давайте скопируем скомпилированные файлы bin \(executive\) в папку, которую мы ранее создали: .local/bin
-
-#### Теперь нам нужно выключить сервер и сделать снэпшот машины
-
-sudo shutdown -h now
+Kopieren wir die kompilierten bin-Dateien \(Ausführungsdateien\) in den Ordner, den wir zuvor erstellt haben: .local/bin Jetzt müssen wir den Server herunterfahren und einen Snapshot des Rechners erstellen sudo shutdown -h jetzt
 
 ![](.gitbook/assets/image%20%2817%29.png)
 
@@ -75,7 +71,7 @@ cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.25.1/x/cardano-c
 cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.25.1/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
 ```
 
-Проверим установленную версию и местоположение
+Installierte Version und Speicherort prüfen
 
 ```text
 which cardano-node && which cardano-cli
