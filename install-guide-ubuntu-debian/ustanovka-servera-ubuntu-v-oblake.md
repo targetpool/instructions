@@ -1,97 +1,89 @@
-# Установка сервера Ubuntu в облаке
+# Installieren eines Ubuntu-Servers in der Cloud
 
-Для данного руководства я буду использовать "Digital Ocean" для хостинга наших Linux-серверов.
-
-Создадим новый проект в "D.O."
+Für dieses Tutorial werde ich "Digital Ocean" verwenden, um unsere Linux-Server zu hosten. Legen wir ein neues Projekt in "D.O." an.
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-Давайте выберем нашу версию Ubuntu и тарифный план. На более дешевых версиях Cardano не устанавливается \(я проверил :\) \).
+Wählen wir unsere Ubuntu-Version und den Datentarif aus. Auf billigeren Versionen lässt sich Cardano nicht installieren \(ich habe es überprüft :\) \)
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
     
   
-Выберете  датацентр. где будут распологаться ваши серверы
+Wählen Sie das Rechenzentrum, in dem sich Ihre Server befinden werden
 
 ![](../.gitbook/assets/server%20%281%29.jpg)
 
-Далее нужно создать вход в систему, используя SSH ключ, не используйте пароли. Для генерации SSH-ключа можно использовать PUTTY. [https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe)
+Als nächstes müssen Sie ein Login mit einem SSH-Schlüssel erstellen, verwenden Sie keine Passwörter. Sie können PUTTY verwenden, um den SSH-Schlüssel zu erzeugen. [https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe)
 
-Открываем PUTTY KEY GEN нажимаем на кнопку Generate  и двигаем мышкой пока не сгенерится ключ.
+Öffnen Sie PUTTY KEY GEN, drücken Sie die Taste Generate und bewegen Sie die Maus, um den Schlüssel zu erzeugen.
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
- Копируем сгенерированый ключ и устанавливаем для него надёжный пароль.
+Kopieren Sie den generierten Schlüssel und setzen Sie ein sicheres Passwort dafür.
 
 ![](../.gitbook/assets/image%20%287%29.png)
 
-Нажимаем на кнопку  New SSH key и копируем ключ который сгенерировали в Putty
+Klicken Sie auf die Schaltfläche Neuer SSH-Schlüssel und kopieren Sie den von Ihnen erzeugten Schlüssel in Putty
 
 ![](../.gitbook/assets/image%20%2813%29.png)
 
-Даем имя серверу Relay1 Нажимаем  Generate Droplet
+Benennen Sie den Server Relay1 Klicken Sie auf Droplet generieren
 
 ![](../.gitbook/assets/image%20%2814%29.png)
 
-для подключения к вашему новому серверу мы будем использовать PUTTY Client
-
-[https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe)
-
-Указываем путь к вашему ключу
+um eine Verbindung zu Ihrem neuen Server herzustellen, verwenden wir den PUTTY-Client [https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe) Geben Sie den Pfad zu Ihrem Schlüssel an
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-Подключаемся к Public IP через Putty и вводим пароль от SSH
+Verbinden Sie sich über Putty mit der öffentlichen IP und geben Sie das SSH-Passwort ein
 
 ![](../.gitbook/assets/image%20%2820%29.png)
 
-Создаем пользователя Cardano
+Anlegen eines Cardano-Benutzers
 
 ```text
 sudo adduser cardano
 ```
 
-Даем пользователю админ права
+Geben Sie dem Benutzer Administratorrechte
 
 ```text
 sudo usermod -aG sudo cardano
 ```
 
-Подключаем SSH Ключи для нового пользователя
-
-Создаем директорию где будет храниться ключ 
+SSH-Schlüssel für neuen Benutzer verbinden Erstellen Sie das Verzeichnis, in dem der Schlüssel gespeichert werden soll
 
 ```text
 mkdir /home/example_user/.ssh
 ```
 
-Создаем файл и копируем туда наш SSH ключ, сохраняем и выходим
+Erstellen Sie eine Datei und kopieren Sie unseren SSH-Schlüssel dorthin, speichern und beenden Sie
 
 ```text
 mkdir /home/example_user/.ssh
 ```
 
-Даем пользователю права на использование SSH ключа
+Erlauben Sie einem Benutzer, den SSH-Schlüssel zu verwenden
 
 ```text
 chown -R cardano:cardano /home/cardano/.ssh
 chmod 600 /home/cardano/.ssh/authorized_keys
 ```
 
-Создаем swap file 10G
+Erstellen einer 10G-SWAP datai
 
 ```text
 sudo fallocate -l 10G /swapfile
 ```
 
-Даем права на swap file 
+Erteilen von Auslagerungsdateiberechtigungen
 
 ```text
 sudo chmod 600 /swapfile
 ```
 
-Маркиркируем и активируем SWAP file
+SWAP-Datei markieren und aktivieren
 
 ```text
 sudo mkswap /swapfile
@@ -99,13 +91,13 @@ sudo swapon /swapfile
 
 ```
 
-Делаем бэкап
+
 
 ```text
 sudo swapon /swapfile
 ```
 
-Делаем swap file постоянным
+SWAP-Datei dauerhaft machen
 
 ```text
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab

@@ -1,22 +1,12 @@
-# Руководство по установке Cardano ноды 1.26.1
+# Cardano Node Installationsanleitung 1.26.1
 
-## Руководство по установке Cardano ноды 1.25.1 \(MainNet\) для чайников.
+Cardano 1.25.1 \(MainNet\) Node Installationsanleitung für Dummies.
 
-Большая часть инструкции переведена с английского языка, но после установки наших нод мы ее сильно откорректировали.
+1\) Diese Anleitung setzt voraus, dass Sie zumindest über Grundkenntnisse der Linux-Administration verfügen. 2\) Wir werden Ubuntu als Betriebssystem verwenden. Außerdem gibt es hervorragende Ressourcen auf der Internet-Supportseite der Cardano-Community [https://t.me/CardanoCommunityTechSupport](https://t.me/CardanoCommunityTechSupport). Diese Anleitung basiert auf dem offiziellen Cardano-Handbuch und unseren Erfahrungen. Mir ist klar, dass es eine Menge verstreuter Informationen im Internet gibt, deshalb habe ich diesen Leitfaden erstellt, in dem Sie alles an einem Ort finden können.
 
-1\) В данном руководстве предполагается, что вы обладаете, по крайней мере, базовыми знаниями по администрированию Linux. 
-
-2\) Мы будем использовать Ubuntu как наш выбор для операционной системы.  
-  
+Ihr Setup sollte mindestens 2 Server und einen separaten Rechner haben, idealerweise 3 Server und einen separaten Rechner \(1 Netzteil, 2 Relais und ein separater Rechner\).
 
 
-* также отличные ресурсы в интернете, но, к сожалению, они на английском языке.  [https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node](https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node)   [https://guides.poapool.com](https://guides.poapool.com) 
-* Рабочая группа Cardano Shelley & StakePool Best Practice [https://t.me/CardanoStakePoolWorkgroup](https://t.me/CardanoStakePoolWorkgroup). 
-* Техническая поддержка сообщества Cardano  [https://t.me/CardanoCommunityTechSupport](https://t.me/CardanoCommunityTechSupport) 
-
-Это руководство основано на официальном руководстве Cardano и нашем опыте. Я понимаю, что в интернете много разрозненной информации, поэтому я создал этот путеводитель, где можно найти все в одном месте.
-
-В вашей установке должно быть как минимум 2 сервера и автономная машина, в идеале 3 сервера и автономный компьютер \(1 БП, 2 реле и автономный компьютер\)
 
 ![](.gitbook/assets/image.png)
 

@@ -1,11 +1,11 @@
 # Table of contents
 
 * [instructions](README.md)
-* [Руководство по установке Cardano ноды 1.26.1](rukovodstvo-po-ustanovke-cardano-nody-1.26.1.md)
+* [Cardano Node Installationsanleitung 1.26.1](rukovodstvo-po-ustanovke-cardano-nody-1.26.1.md)
 
 ## Install Guide Ubuntu/Debian
 
-* [Установка сервера Ubuntu в облаке](install-guide-ubuntu-debian/ustanovka-servera-ubuntu-v-oblake.md)
+* [Installieren eines Ubuntu-Servers in der Cloud](install-guide-ubuntu-debian/ustanovka-servera-ubuntu-v-oblake.md)
 
 ---
 

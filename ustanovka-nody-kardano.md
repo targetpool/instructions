@@ -35,10 +35,10 @@ git fetch --all --recurse-submodules --tags
 > .......  
 > 1.25.1
 
-\(на момент написания данной инструкции\) последняя версия Mainnet Tag - 1.25.1, так что давайте ее скачаем!
+\(на момент написания данной инструкции\) последняя версия Mainnet Tag - 1.26.1, так что давайте ее скачаем!
 
 ```text
- git checkout tags/1.25.1
+ git checkout tags/1.26.1
 ```
 
 Давайте установим с помощью GHC.
@@ -83,11 +83,9 @@ cardano-node --version
 cardano-cli --version
 ```
 
-> **cardano@sp247srv**:**~**$ cardano-node --version  
-> cardano-node 1.25.1 - linux-x86\_64 - ghc-8.10  
-> git rev 400d18092ce604352cf36fe5f105b0d7c78be074
+> cardano-node 1.26.1 - linux-x86\_64 - ghc-8.10   
+> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
 
-> **cardano@sp247srv**:**~**$ cardano-cli --version  
-> cardano-cli 1.25.1 - linux-x86\_64 - ghc-8.10  
-> git rev 400d18092ce604352cf36fe5f105b0d7c78be074
+> cardano-cli 1.26.1 - linux-x86\_64 - ghc-8.10   
+> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
 
