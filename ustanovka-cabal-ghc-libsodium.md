@@ -1,10 +1,10 @@
-# Установка Cabal, GHC, Libsodium
+# Installieren Cabal, GHC, Libsodium
 
-Подключаемся к серверу с пользователем Cardano, root - больше не используем
+Verbinden Sie sich mit dem Server mit dem Cardano-Benutzer, root - verwenden Sie keine weiteren
 
 ![](.gitbook/assets/image%20%2819%29.png)
 
-Чтобы успешно установить \(скомпилировать\) кардано, мы должны быть уверены, что у нас есть все необходимые обновления! Чтобы скачать и установить их, введите следующие команды:
+Um cardano erfolgreich installieren \(kompilieren\) zu können, müssen wir sicherstellen, dass wir alle notwendigen Updates haben! Um sie herunterzuladen und zu installieren, geben Sie die folgenden Befehle ein:
 
 ```
 sudo apt-get update -y
@@ -16,9 +16,9 @@ sudo apt-get install -y curl python3 build-essential pkg-config libffi-dev libgm
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 ```
 
-## Установка  Cabal
+Kabale Installation
 
-Мы будем устанавливать Cardano с помощью Cabal. Мы используем рекомендованную версию 3.2.0.0 и установим ее в нашу локальную папку bin \(.local/bin\).
+ Wir werden Cardano mit Cabal installieren. Wir werden die empfohlene Version 3.2.0.0 verwenden und sie in unserem lokalen bin-Ordner \(.local/bin\) installieren.
 
 ```bash
 wget https://downloads.haskell.org/~cabal/cabal-install-3.2.0.0/cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz
@@ -28,7 +28,7 @@ mkdir -p ~/.local/bin
 mv cabal ~/.local/bin/
 ```
 
-Теперь у вас должна быть установлена программа cabal в папке ~/.local/bin/, теперь мы просто должны убедиться, что система также может найти файл cabal bin\(executive\). Давайте добавим эту информацию в наш файл пользовательского профиля \(.bashrc\), перезагрузим его \(используя команду исходного кода\), и проверим, видим ли мы в списке нашу папку ~/.local/bin/.
+Jetzt sollten Sie cabal im Ordner ~/.local/bin/ installiert haben, jetzt müssen wir nur noch sicherstellen, dass das System die cabal bin\(executive\)-Datei auch finden kann. Fügen wir diese Informationen zu unserer Benutzerprofildatei \(.bashrc\) hinzu, laden sie neu \(mit dem Befehl source\) und prüfen, ob unser Ordner ~/.local/bin/ aufgelistet ist.
 
 ```bash
 echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc 
@@ -36,14 +36,14 @@ source ~/.bashrc
 echo $PATH
 ```
 
-Теперь давайте проверим, установлена ли последняя версия пакета Cabal.
+Prüfen wir nun, ob die neueste Version des Cabal-Pakets installiert ist.
 
 ```bash
 cabal update
 cabal --version
 ```
 
-вы должны увидеть что-то вроде этого:
+sollten Sie etwas Ähnliches sehen:
 
 > **cardano@localhost**:**~**$  cabal update  
 > cabal --version  
@@ -57,7 +57,7 @@ cabal --version
 
 ## Установка  GHC
 
-Перейдем к следующим шагам - установка GHC - компилятора кода Haskell \(Cardano, написан на Haskell \)
+Gehen wir zu den nächsten Schritten über - Installation von GHC - dem Haskell-Code-Compiler \(Cardano, geschrieben in Haskell \)
 
 ```bash
 mkdir -p ~/git
@@ -71,26 +71,26 @@ cd ghc-8.10.2
 sudo make install
 ```
 
-давайте убедимся, что всё установлено правильно**:**
+Lassen Sie uns sicherstellen, dass alles richtig eingestellt ist:
 
 ```bash
 ghc --version
 ```
 
-вы должны увидеть что-то вроде этого:
+sollten Sie etwas Ähnliches sehen:
 
 > cardano@localhost:~$ **ghc --version**  
 > The Glorious Glasgow Haskell Compilation System, version 8.10.2
 
 ## Установка  Libsodium
 
-Создадим папку git, в которой будем компилировать исходный код библиотеки libsodium:
+Erstellen Sie einen Git-Ordner, in dem Sie den Quellcode der libsodium-Bibliothek kompilieren:
 
 ```bash
 cd ~/git
 ```
 
-Скачаем и установим библиотеку libsodium \(нам нужна конкретная ветка библиотеки, поэтому следуйте указаниям руководства\).
+Laden wir die libsodium-Bibliothek herunter und installieren sie \(wir benötigen einen bestimmten Zweig der Bibliothek, folgen Sie also der Anleitung\).
 
 ```bash
 git clone https://github.com/input-output-hk/libsodium
@@ -102,7 +102,7 @@ make
 sudo make install
 ```
 
-Давайте добавим следующий путь к нашему файлу .bashrc
+Fügen wir den folgenden Pfad zu unserer .bashrc-Datei hinzu
 
 ```bash
 echo "export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH" >> ~/.bashrc
