@@ -1,4 +1,4 @@
-# instructions
+# zRAM Instalieren
 
 Nach dem Upgrade auf Node 1.26.1 haben wir festgestellt, dass die Nodes mehr RAM-Ressourcen verbrauchen. Wenn Sie mit einer Mindestanforderung von 4 Gigabyte RAM arbeiten, werden Sie wahrscheinlich feststellen, dass nach dem Update Ihre Ressource komplett voll ist und wenn Sie eine SWAP-Datei haben, wird diese aktiv genutzt. Das Problem mit der SWAP-Datei ist, dass sie zu langsam ist und Prozesse in der Schlange sitzen und warten, bis sie an der Reihe sind. Um die Dinge zu beschleunigen und die Zeile aus dieser Datei zu entfernen, können Sie zRAM verwenden. hier sind die Anweisungen. Ich hoffe, das hilft! Wenn Sie auf DO laufen, dann hat Ihr Linux-Paket höchstwahrscheinlich kein zRAM, also müssen wir ein neues Image herunterladen
 

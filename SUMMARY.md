@@ -1,6 +1,6 @@
 # Table of contents
 
-* [instructions](README.md)
+* [zRAM Instalieren](README.md)
 * [Cardano Node Installationsanleitung 1.26.1](rukovodstvo-po-ustanovke-cardano-nody-1.26.1.md)
 
 ## Installationsanleitung Ubuntu/Debian <a id="install-guide-ubuntu-debian"></a>
