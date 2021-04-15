@@ -1,6 +1,6 @@
 # zRAM Instalieren
 
-Nach dem Update auf Version 1.26.1 haben wir festgestellt, dass die Knoten mehr RAM-Ressourcen verbrauchen. Wenn Sie mit einer minimalen RAM-Anforderung von 4gig arbeiten, werden Sie wahrscheinlich feststellen, dass nach dem Upgrade Ihre Ressource komplett voll ist, und wenn Sie eine SWAP-Datei haben, wird diese aktiv genutzt. Das Problem mit der SWAP-Datei ist, dass sie zu langsam ist und die Prozesse in der Warteschlange sitzen und auf ihre Verarbeitung warten. Um den Vorgang zu beschleunigen und das langsame SWAP zu entlasten, können Sie zRAM verwenden. Hier sind die Anweisungen Hoffentlich hilft das!
+Nach dem Update auf Version 1.26.1 haben wir festgestellt, dass die Noden mehr RAM-Ressourcen verbrauchen. Wenn Sie mit einer minimalen RAM-Anforderung von 4gig arbeiten, werden Sie wahrscheinlich feststellen, dass nach dem Upgrade Ihre Ressource komplett voll ist, und wenn Sie eine SWAP-Datei haben, wird diese aktiv genutzt. Das Problem mit der SWAP-Datei ist, dass sie zu langsam ist und die Prozesse in der Warteschlange sitzen und auf ihre Verarbeitung warten. Um den Vorgang zu beschleunigen und das langsame SWAP zu entlasten, können Sie zRAM verwenden. Hier sind die Anweisungen Hoffentlich hilft das!
 
 Übersetzt mit www.DeepL.com/Translator \(kostenlose Version\) Wenn Sie auf DO laufen, dann hat Ihr Linux-Paket höchstwahrscheinlich kein zRAM, also müssen wir ein neues Image herunterladen
 
