@@ -28,3 +28,7 @@
 * [Почему Кардано не нуждается в слэшинге](slashing.md)
 * [Алонзо приносит в Cardano "умные" контракты.](alonzo-prinosit-v-cardano-umnye-kontrakty..md)
 
+## Апдейт Кардано <a id="apdeit-nody-s-versii-1.25.1-na-1.26.1"></a>
+
+* [Установка zRAM](apdeit-nody-s-versii-1.25.1-na-1.26.1/ustanovka-zram.md)
+
