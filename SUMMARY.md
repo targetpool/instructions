@@ -21,6 +21,7 @@
 
 ---
 
+* [Компания Cardano представляет свое первое решение для цепочки поставок в сотрудничестве со службой S](kompaniya-cardano-predstavlyaet-svoe-pervoe-reshenie-dlya-cepochki-postavok-v-sotrudnichestve-so-slu.md)
 * [Как начать cтейкать ADA в сети Cardano](kak-nachat-s-steikingom-v-seti-cardano.md)
 * [Почему проект Кардано Важен](pochemu-proekt-kardano-vazhen.md)
 * [Кто будет обслуживать Кардано](who-will-maintain-cardano.md)
