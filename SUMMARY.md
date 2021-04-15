@@ -17,3 +17,7 @@
 * [Konfiguration des Cardano Node](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Ausführen eines Cardano Node](cardano-node-configuration-1/zapusk-nody-kardano.md)
 
+## Update Cardano
+
+* [zRAM Instalieren](update-cardano/zram-instalieren.md)
+
