@@ -29,5 +29,6 @@
 
 ## CARDANO NODE UPDATE
 
+* [Installing zRAM](cardano-node-update/installing-zram.md)
 * [Upgrading from 1.25.1 to 1.26.1](cardano-node-update/upgrading-from-1.25.1-to-1.26.1.md)
 
