@@ -1,6 +1,6 @@
 # Installing zRAM
 
-After the upgrade to node 1.26.1 we noticed that nodes started eating up more RAM resources. If you are running on a minimum requirement of 4 gigs RAM you will probably see that after the update your resource is completely full and if you have a swap file it is actively used. The problem with SWAP file is that it is too slow and processes sit in line waiting for their turn. In order to speed things up and remove the line from this file you can use zRAM. here are the instructions. I hope this helps!
+After the upgrade to node 1.26.1 we noticed that nodes started eating up more RAM resources. If you are running on a minimum requirement of 4 gigs RAM you will probably see that after the update your resource is completely full and if you have a SWAP file it is actively used. The problem with SWAP file is that it is too slow and processes sit in line waiting for their turn. In order to speed things up and remove the line from this file you can use zRAM. here are the instructions. I hope this helps!
 
 If you are running on DO then most likely your linux package does not have zRAM so we will need to download a new image
 
@@ -39,7 +39,7 @@ sudo systemctl status zramswap.service
 
 zramswap.service - Linux zramswap setup Loaded: loaded \(/lib/systemd/system/zramswap.service; enabled; vendor preset: enabled\) Active: active \(exited\) since Thu 2021-04-15 06:56:15 UTC; 7min ago Docs: man:zramswap\(8\) Main PID: 742 \(code=exited, status=0/SUCCESS\) Tasks: 0 \(limit: 4609\) Memory: 0B CGroup: /system.slice/zramswap.service
 
-With this command you can check how your swapfile and zRAM are behaving. You will see that by default 128m has been allocated to each partition and swapfile priority has been changed to -2 and zRAM is 100. So system will used zRAMfirst
+With this command you can check how your SWAP file and zRAM are behaving. You will see that by default 128m has been allocated to each partition and SWAP file priority has been changed to -2 and zRAM is 100. So system will used zRAMfirst
 
 ```text
  sudo swapon
@@ -81,5 +81,5 @@ NAME           TYPE           SIZE          USED           PRIO
 
 /dev/zram1 partition       256M       249.1M       100
 
-Ofcourse it is better to run on 8gigs ram, but if you are on 4 this will significantly help with the machines performace.
+Ofcourse it is better to run on 8gigs RAM, but if you are on 4 this will significantly help with the machines performace.
 
