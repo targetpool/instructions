@@ -4,7 +4,7 @@ Für dieses Tutorial werde ich "Digital Ocean" verwenden, um unsere Linux-Server
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-Wählen wir unsere Ubuntu-Version und den Datentarif aus. Auf billigeren Versionen lässt sich Cardano nicht installieren \(ich habe es überprüft :\) \)
+Wählen wir unsere Ubuntu-Version und den Datentarif aus. Auf billigeren Versionen lässt sich Cardano nicht installieren \(ich habe es überprüft :\) \) Leider nach dem Upgrade auf 1.26.1 die 20$ Option ist auch nicht funktionieren. Sie brauchen jetzt 8 gigs von RAMа\)
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
