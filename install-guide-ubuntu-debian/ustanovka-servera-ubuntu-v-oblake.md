@@ -4,7 +4,7 @@ For tis tutorial I will be using Digital Ocean as our server hosting service
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-Lets pick our Ubuntu version and a payment plan. On cheaper payment plans your node will not run, I have tried. \)\)\)
+Lets pick our Ubuntu version and a payment plan. On cheaper payment plans your node will not run, I have tried. \)\)\) Unfortunately after the upgrade to 1.26.1 the 20$ option is not working either. Zou now need 8 gigs of RAM
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
