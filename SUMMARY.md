@@ -31,5 +31,5 @@
 ## Апдейт Кардано <a id="apdeit-nody-s-versii-1.25.1-na-1.26.1"></a>
 
 * [Установка zRAM](apdeit-nody-s-versii-1.25.1-na-1.26.1/ustanovka-zram.md)
-* [Untitled](apdeit-nody-s-versii-1.25.1-na-1.26.1/untitled.md)
+* [Upgrade from 1.25.1 to 1.26.1](apdeit-nody-s-versii-1.25.1-na-1.26.1/untitled.md)
 
