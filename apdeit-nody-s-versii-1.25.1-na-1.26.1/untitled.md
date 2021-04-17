@@ -1,23 +1,21 @@
-# Upgrade from 1.25.1 to 1.26.1
+# Апгрейд с версии 1.25.1 на 1.26.1
 
-## Upgrade from 1.25.1 to 1.26.1
+#### Апгрейд с версии 1.25.1 на 1.26.1
 
-If you are running version 1.25.1 you need to upgrade your pool. Please use the instructions below to upgrade your pool.​
-
-you will have to create a backup of your binaries
+Если вы используете версию 1.25.1, вам необходимо обновить ваш пул. Пожалуйста, воспользуйтесь приведенной ниже инструкцией, чтобы обновить ваш пул. вам нужно будет создать резервную копию ваших двоичных файлов.
 
 ```text
 cd .local/bin/​# let's create a folder with the version numbermkdir -p $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')​# copying files to the created foldercp cardano-node $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')/cp cardano-cli $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')/
 ```
 
-now we need to update and upgrade the packages
+теперь нам нужно обновить и модернизировать пакеты
 
 ```text
 sudo apt-get update -y
 sudo apt-get upgrade -y​
 ```
 
-now we need to create a directory where we will download the code
+Теперь нам нужно создать каталог, в который мы будем загружать код.
 
 ```text
 cd ~
@@ -29,7 +27,7 @@ cd source
 rm -rf cardano-node
 ```
 
-#### lets download the source from git
+давайте загрузим источник из GIT
 
 ```text
 git clone https://github.com/input-output-hk/cardano-node.git
@@ -40,7 +38,7 @@ git fetch --all --recurse-submodules --tags
 git checkout tags/1.26.1
 ```
 
-####  update cabal and install using GHC
+####  обновите Кабал и установите с помощью GHC
 
 ```text
 cabal clean
@@ -49,7 +47,7 @@ cabal update
 cabal configure --with-compiler=ghc-8.10.2
 ```
 
-#### Adding flags for the libsodium library
+Добавление флагов для библиотеки Libsodium
 
 ```text
 echo "package cardano-crypto-praos" >>  cabal.project.local
@@ -62,7 +60,7 @@ build all
 
 ​
 
-NOW YOU HAVE TO STOP YOUR NODE before running commands below!
+  перед выполнением команд, приведенных ниже ВЫ ДОЛЖНЫ ОСТАНОВИТЬ ВАШУ НОДУ!
 
 ```text
 mkdir -p ~/.local/bin/
@@ -70,7 +68,7 @@ cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.26.1/x/cardano-c
 cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.26.1/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
 ```
 
-#### Check if you have installed everything correctly.
+Проверьте, правильно ли вы все установили.
 
 ```text
 cardano-node --version
@@ -81,31 +79,31 @@ cardano-cli --version# let's check if we have successfully installed the latst c
 
 > cardano-cli --version cardano-cli 1.26.1 - linux-x86\_64 - ghc-8.10
 
-now you can copy the archive to other machines, to producer and other relays if you have them
+теперь вы можете скопировать архив на другие машины, производителю и другим реле, если они у вас есть.
 
 ```text
 tar -czvf archive.tar.gz ~/cnode/db ~/.local/bin/cardano-node ~/.local/bin/cardano-cli
 ```
 
- Copy the file to the server that you want to upgrade \(insert IP of another machine\)
+ Скопируйте файл на сервер, который вы хотите обновить \(вставьте IP другой машины\).
 
 ```text
  scp archive.tar.gz cardano@your_remote_server_ip:/home/cardano/
 ```
 
-if you want to connect to server with ssh \(replace also the public key with your filename\)
+если вы хотите подключиться к серверу с помощью ssh \(замените также открытый ключ на ваше имя\)
 
 ```text
 scp -i ~/.ssh/id_rsa archive.tar.gz cardano@your_ip:.
 ```
 
-now you need to unzip the files on the server where you copied them to
+Теперь вам нужно распаковать файлы на сервере, куда вы их скопировали.
 
 ```text
 tar -xvf archive.tar.gz 
 ```
 
-Now stop the cardano node and run the following commands. You need to remove the old db, move the new db and replace binaries
+Теперь остановите узел кардано и выполните следующие команды. Вам нужно удалить старый db, переместить новый db и заменить двоичные файлы.
 
 ```text
 cd
@@ -114,7 +112,7 @@ mv home/cnode/db ~/cnode/db
 mv home/.local/bin/* ~/.local/bin 
 ```
 
-**you are all done. you can start the node**
+Мы закончили. Вы можете запустить Ноду.
 
 ​
 
