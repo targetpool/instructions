@@ -91,13 +91,13 @@ tar -czvf archive.tar.gz ~/cnode/db ~/.local/bin/cardano-node ~/.local/bin/carda
  scp archive.tar.gz cardano@your_remote_server_ip:/home/cardano/
 ```
 
-если вы хотите подключиться к серверу с помощью ssh \(замените также открытый ключ на ваше имя\)
+если вы хотите подключиться к серверу с помощью ssh \(замените также открытый ключ на имя вашего файла\)
 
 ```text
 scp -i ~/.ssh/id_rsa archive.tar.gz cardano@your_ip:.
 ```
 
-Теперь вам нужно распаковать файлы на сервере, куда вы их скопировали.
+Теперь вам нужно распаковать файлы на сервере, которые вы скопировали.
 
 ```text
 tar -xvf archive.tar.gz 
