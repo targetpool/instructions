@@ -91,7 +91,7 @@ Kopieren Sie die Datei auf den Server, den Sie aktualisieren möchten \(fügen S
  scp archive.tar.gz cardano@your_remote_server_ip:/home/cardano/
 ```
 
-wenn Sie sich über ssh mit dem Server verbinden wollen \(ersetzen Sie auch den öffentlichen Schlüssel durch Ihren Namen\)
+wenn Sie sich über ssh mit dem Server verbinden wollen \(ersetzen Sie auch den öffentlichen Schlüssel durch Ihren Dateinamen\)
 
 ```text
 scp -i ~/.ssh/id_rsa archive.tar.gz cardano@your_ip:.
