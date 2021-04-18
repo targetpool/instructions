@@ -32,3 +32,7 @@
 * [Установка zRAM](apdeit-nody-s-versii-1.25.1-na-1.26.1/ustanovka-zram.md)
 * [Апгрейд с версии 1.25.1 на 1.26.1](apdeit-nody-s-versii-1.25.1-na-1.26.1/untitled.md)
 
+## Crypto General
+
+* [Как купить и продать крипто валюту для чайников](crypto-general/kak-kupit-i-prodat-kripto-valyutu-dlya-chainikov.md)
+
