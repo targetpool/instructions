@@ -3,34 +3,36 @@
 Итак, Вы хотите купить Cardano $ADA или другую крипто-валюту и не знаете с чего начать? Эти пошаговые инструкции для Вас! У вас есть много различных вариантов, где купить или продать крипто валюту. Тем не менее, в этом руководстве, я буду предоставлять вам ссылки и инструкции о том, как купить с некоторыми из крупнейших мировых обменников, как crypto.com и Binance.
 
 {% hint style="info" %}
-Tip!  Surely you can download the programs on your own and just register, but this way you will not be getting extra perks. Exchanges like Crypto.com and Binance are interested in spreading a word about crypto, so they give referral bonus for every person who signs up. Both parties, the one who refers and the one who signs up, both get a bonus! So I encourage you to sign up using my links below. After you register and you claim your reward you will be able to refer your friends and you and your friend will receive a bonus. Much better than just signing up on your own and leaving money on the table!
+Тип! Конечно, вы можете загрузить программы самостоятельно и просто зарегистрироваться, но таким образом вы не получите дополнительных бонусов. Такие биржи, как Crypto.com и Binance заинтересованы в распространении слова о крипте, поэтому они предлагают бонус за привлечение каждого человека, подписавшегося на программу. Обе стороны, тот, кто рекомендует и тот, кто подписывается, оба получают бонус! Поэтому я призываю вас подписаться, используя мои ссылки ниже. После того, как вы зарегистрируетесь и получите бонус, вы сможете рекомендовать своих друзей, а вы и ваш друг получите бонус. Гораздо лучше, чем просто зарегистрироваться самостоятельно и оставить деньги на столе!
 {% endhint %}
 
-####  Buying and selling crypto with Crypto.com
 
- Use my referral link [https://crypto.com/app/phupcmyyct](https://crypto.com/app/phupcmyyct) to sign up for Crypto.com and we both get $25 USD
 
-Exchanges are like a bank. Its an organization that lets you buy and sell crypto so in order to make any transactions and for exchanges to stop any fraudulent activity, they have to verify your identity so you will need an official ID or a Passport. It is completely safe to share this information with exchanges like crypto.com and Binance. 
+####  Покупка и продажа крипто-валюты с Crypto.com
 
-It is better to click on the link above from your smart phone and register using your phone, because you will have to make a picture of your ID using the app. Once you register and your application is approved \(by the way it took me several tries to submit my ID\) It was turned down because lighting was not good or parts of the ID were not readable. During the registration you will be provided with key words - it is usually 24 words, make sure to write down those words and store them in a safe place.
+ Используйте мою реферальную ссылку [https://crypto.com/app/phupcmyyct](https://crypto.com/app/phupcmyyct), чтобы зарегистрироваться на Crypto.com, и мы оба получим $25 USD.
+
+Биржа - как банк. Это организация, которая позволяет вам покупать и продавать крипто-валюту, для того чтобы совершать любые операции, они должны подтвердить вашу личность, так что вам понадобится официальное удостоверение личности или паспорт. Это абсолютно безопасно делиться этой информацией с такими биржами, как crypto.com и Binance.
+
+Лучше нажать на ссылку выше с вашего смартфона и зарегистрироваться с помощью телефона, потому что вам придется сфотографировать ваш ID с помощью приложения. После того, как вы зарегистрировались и ваше заявление было одобрено \(кстати, мне потребовалось несколько попыток\), первый раз обращение было было отклонено из за плого освещения, второй раз части ID были нечитаемы. Во время регистрации вам будут предоставлены ключевые слова - обычно это 24 слова, обязательно запишите эти слова и храните их в безопасном месте.
 
 {% hint style="info" %}
-Tip!  When you go to a bank they verify your identity using your ID from now on in the crypto world your identity will be verified using these 24 words! When you hear horror stories that somebody lost access to their crypto is only because they either lost those key fraises or somebody stole them! 
+Тип! В банке, ваша личность проверяется с помощью пастора, в мире крипто-валюты ваша личность будет проверена с помощью этих ключевых слов! Когда вы слышите ужастики, что кто-то потерял доступ к крипто-валюте это только потому, что они либо потеряли эти ключевые слова либо кто-то их украл!
 {% endhint %}
 
-Once your application is approved you will be able to log into your app. your main screen will look something like this. You will want to click on the ctypto.com logo at the bottom of the screen
+Как только ваша заявка будет одобрена, вы сможете войти в ваше приложение. Ваш главный экран будет выглядеть примерно так. Вам нужно будет нажать на логотип ctypto.com в нижней части экрана.
 
 ![](../.gitbook/assets/screenshot_20210417-084035_cryptocom.jpg)
 
-Your screen will look like this:
+Ваш экран будет выглядеть вот так:
 
 ![](../.gitbook/assets/screenshot_20210418-120446_cryptocom.jpg)
 
-Now click on buy at the bottom of the screen and you will have an option to purchace a range of crypto currencies
+Теперь нажмите на кнопку "Купить" в нижней части экрана, и у вас будет возможность купить ряд крипто-валют.
 
 ![](../.gitbook/assets/screenshot_20210418-121216_cryptocom.jpg)
 
-In the search where it says cryptocurrency you can tap and type in ADA if you wish to purchase Cardano or tap on the cryptocurrency from the list. Once you select the cryptocurrency you will be taken to the checkout box. Where you will select the amount that you want to spend. Just click on ADA and change quantity, you will see what that transaction will cost in your selected currency for me it is EUR.
+В поиске, где написано cryptocurrency вы можете нажать и ввести ADA, если вы хотите купить Cardano или нажмите на крипто-валюту из списка. После того, как вы выберете крипто-валюту, вы перейдете к флажку. Где вы выберете сумму, которую вы хотите потратить. Просто нажмите на ADA и измените количество, вы увидите, сколько будет стоить эта сделка в выбранной вами валюте для меня это EUR. 
 
 ![](../.gitbook/assets/screenshot_20210417-084212_cryptocom.jpg)
 
