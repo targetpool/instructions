@@ -21,3 +21,7 @@
 * [Installing zRAM](cardano-node-update/installing-zram.md)
 * [Upgrading from 1.25.1 to 1.26.1](cardano-node-update/upgrading-from-1.25.1-to-1.26.1.md)
 
+## General Crypto
+
+* [How to buy and sell crypto for Dummies](general-crypto/how-to-buy-and-sell-crypto-for-dummies.md)
+
