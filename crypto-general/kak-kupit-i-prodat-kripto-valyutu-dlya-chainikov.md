@@ -1,6 +1,6 @@
 # Как купить и продать крипто валюту для чайников
 
-So you would like to Buy Cardano $ADA or other crypto currency and you don't know where to begin? This step by step is for you. You have many different choices where to buy or sell crypto currency in this Tutorial I will be providing you with links and instructions on how to buy with some of the worlds largest exchanges like crypto.com and Binance.
+Итак, Вы хотите купить Cardano $ADA или другую крипто-валюту и не знаете с чего начать? Эти пошаговые инструкции для Вас! У вас есть много различных вариантов, где купить или продать крипто валюту. Тем не менее, в этом руководстве, я буду предоставлять вам ссылки и инструкции о том, как купить с некоторыми из крупнейших мировых обменников, как crypto.com и Binance.
 
 {% hint style="info" %}
 Tip!  Surely you can download the programs on your own and just register, but this way you will not be getting extra perks. Exchanges like Crypto.com and Binance are interested in spreading a word about crypto, so they give referral bonus for every person who signs up. Both parties, the one who refers and the one who signs up, both get a bonus! So I encourage you to sign up using my links below. After you register and you claim your reward you will be able to refer your friends and you and your friend will receive a bonus. Much better than just signing up on your own and leaving money on the table!
