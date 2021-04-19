@@ -30,7 +30,7 @@ Now click on buy at the bottom of the screen and you will have an option to purc
 
 ![](../.gitbook/assets/screenshot_20210418-121216_cryptocom.jpg)
 
-In the search where it says cryptocurrency you can tap and type in ADA if you wish to purchase Cardano or tap on the cryptocurrency from the list. Once you select the cryptocurrency you will be taken to the checkout box. Where you will select the amount that you want to spend. Just click on ADA and change quantity, you will see what that transaction will cost in your selected currency for me it is EUR.
+In order for you to get the 25$ bonus you will need to purchase crypto.com-s tocken CRO \(you can then sell it\). In the search where it says cryptocurrency you can tap and type in CRO or just select it from the list.  Once you select the cryptocurrency you will be taken to the checkout box, where you will select the amount that you want to spend. Just click on CRO and change quantity, you will see what that transaction will cost you in your selected currency, for me it is EUR.
 
 ![](../.gitbook/assets/screenshot_20210417-084212_cryptocom.jpg)
 
