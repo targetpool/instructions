@@ -20,6 +20,7 @@
 
 ---
 
+* [Предстоящее обновление Алонцо от Cardano подталкивает цену ADA, несмотря на большую задержку.](predstoyashee-obnovlenie-alonco-ot-cardano-podtalkivaet-cenu-ada-nesmotrya-na-bolshuyu-zaderzhku..md)
 * [Компания Cardano представляет свое первое решение для цепочки поставок в сотрудничестве с Scantrust](kompaniya-cardano-predstavlyaet-svoe-pervoe-reshenie-dlya-cepochki-postavok-v-sotrudnichestve-so-slu.md)
 * [Как начать cтейкать ADA в сети Cardano](kak-nachat-s-steikingom-v-seti-cardano.md)
 * [Почему проект Кардано Важен](pochemu-proekt-kardano-vazhen.md)
