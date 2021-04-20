@@ -18,12 +18,12 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
 ## Установка  Cabal
 
-e will install Cardano with Cabal. We will use the recommended version 3.2.0.0 and install it in our local bin folder \(.local/bin\).
+e will install Cardano with Cabal. We will use the recommended version 3.4.0.0 and install it in our local bin folder \(.local/bin\).
 
 ```bash
-wget https://downloads.haskell.org/~cabal/cabal-install-3.2.0.0/cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz
-tar -xf cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz
-rm cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz cabal.sig
+wget https://downloads.haskell.org/~cabal/cabal-install-3.4.0.0/cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
+tar -xf cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
+rm cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz cabal.sig
 mkdir -p ~/.local/bin
 mv cabal ~/.local/bin/
 ```
@@ -52,8 +52,8 @@ you should see something like this
 > Writing default configuration to /home/cardano/.cabal/config  
 > Downloading the latest package list from hackage.haskell.org
 
-> **cabal-install version 3.2.0.0  
-> compiled using version 3.2.0.0 of the Cabal library**
+> **cabal-install version 3.4.0.0  
+> compiled using version 3.4.0.0 of the Cabal library**
 
 ## Installing  GHC
 
