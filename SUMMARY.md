@@ -1,6 +1,6 @@
 # Table of contents
 
-* [ardano Node Installationsanleitung 1.26.1](README.md)
+* [ardano Node Installationsanleitung 1.26.2](README.md)
 
 ## Installationsanleitung Ubuntu/Debian <a id="install-guide-ubuntu-debian"></a>
 
