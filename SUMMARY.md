@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Руководство по установке узла Cardano 1.25.1 \(MainNet\)](README.md)
+* [Руководство по установке узла Cardano 1.26.2 \(MainNet\)](README.md)
 
 ## Установка  Ubuntu/Debian <a id="install-guide-ubuntu-debian"></a>
 

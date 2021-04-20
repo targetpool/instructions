@@ -18,12 +18,12 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
 ## Установка  Cabal
 
-Мы будем устанавливать Cardano с помощью Cabal. Мы используем рекомендованную версию 3.2.0.0 и установим ее в нашу локальную папку bin \(.local/bin\).
+Мы будем устанавливать Cardano с помощью Cabal. Мы используем рекомендованную версию 3.4.0.0 и установим ее в нашу локальную папку bin \(.local/bin\).
 
 ```bash
-wget https://downloads.haskell.org/~cabal/cabal-install-3.2.0.0/cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz
-tar -xf cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz
-rm cabal-install-3.2.0.0-x86_64-unknown-linux.tar.xz cabal.sig
+wget https://downloads.haskell.org/~cabal/cabal-install-3.4.0.0/cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
+tar -xf cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
+rm cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz cabal.sig
 mkdir -p ~/.local/bin
 mv cabal ~/.local/bin/
 ```
