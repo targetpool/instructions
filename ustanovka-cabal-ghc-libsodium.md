@@ -52,8 +52,8 @@ cabal --version
 > Writing default configuration to /home/cardano/.cabal/config  
 > Downloading the latest package list from hackage.haskell.org
 
-> **cabal-install version 3.2.0.0  
-> compiled using version 3.2.0.0 of the Cabal library**
+> **cabal-install version 3.4.0.0  
+> compiled using version 3.4.0.0 of the Cabal library**
 
 ## Установка  GHC
 
