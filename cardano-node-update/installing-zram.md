@@ -5,7 +5,7 @@ After the upgrade to node 1.26.1 we noticed that nodes started eating up more RA
 If you are running on DO then most likely your linux package does not have zRAM so we will need to download a new image
 
 ```text
-sudo apt-get install linux-image-generic
+sudo apt-get install linux-image-generic zram-tools
 ```
 
 After we install the image we need to reboot the machine
