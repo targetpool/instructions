@@ -95,5 +95,5 @@ tmux SMASHPGPASSFILE=config/pgpass smash-exe run-app-with-db-sync --config confi
 
  Run the smash-server in sync mode \(in our case, the synchronization lasted more than 24hours  \(in this mode, the smash-server and cardano-node in relay mode during the peak load utilize about 13GB of RAM, cardano-node - 4. 3GB and smash-exe 8-8.5\) SMASHPGPASSFILE=config/pgpass smash-exe run-app-with-db-sync --config config/smash-mainnet-config.yaml --socket-path sockets/node. socket --schema- dir schema/ --state-dir state/ +RTS --disable-delayed-os-memory -return -RTS \(RAM consumption ~ 11.5GB\) SMASHPGPASSFILE=config/pgpass smash-exe run-app-with-db-sync --config config/smash-mainnet-config. yaml --socket-path sockets/node.socket --schema- dir schema/ --state-dir state/ +RTS -N2 -A16m \(RAM consumption ~ 11-11.5Gb, and in my opinion reduced to 2\) active threads:\)
 
-Translated with www.DeepL.com/Translator \(free version\)
+
 
