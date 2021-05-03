@@ -1,5 +1,7 @@
 # Installing Cardano SMASH server
 
+Warning! Instructions are correct and functional, but SMASH has memory leaks that we are working on fixing with the IOHK\#s technical team. We will keep you posted.
+
 Installing the SMASH server   
 First, you need to install the packages required for a smash-server:
 
