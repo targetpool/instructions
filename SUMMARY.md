@@ -20,6 +20,7 @@
 
 * [Installing zRAM](cardano-node-update/installing-zram.md)
 * [Upgrading from 1.25.1 to 1.26.1](cardano-node-update/upgrading-from-1.25.1-to-1.26.1.md)
+* [Installing Cardano SMASH server](cardano-node-update/installing-cardano-smash-server.md)
 
 ## General Crypto
 
