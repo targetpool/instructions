@@ -27,6 +27,7 @@
 * [Кто будет обслуживать Кардано](who-will-maintain-cardano.md)
 * [Почему Кардано не нуждается в слэшинге](slashing.md)
 * [Алонзо приносит в Cardano "умные" контракты.](alonzo-prinosit-v-cardano-umnye-kontrakty..md)
+* [Tокены оживят новые утилиты на Cardano](tokeny-ozhivyat-novye-utility-na-cardano.md)
 
 ## Апдейт Кардано <a id="apdeit-nody-s-versii-1.25.1-na-1.26.1"></a>
 
