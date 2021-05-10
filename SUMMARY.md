@@ -28,6 +28,7 @@
 * [Почему Кардано не нуждается в слэшинге](slashing.md)
 * [Алонзо приносит в Cardano "умные" контракты.](alonzo-prinosit-v-cardano-umnye-kontrakty..md)
 * [Tокены оживят новые утилиты на Cardano](tokeny-ozhivyat-novye-utility-na-cardano.md)
+* [Динамика продолжается: Coinbase вносит в список ADA, и Блумберг добавляет Cardano](dinamika-prodolzhaetsya-coinbase-vnosit-v-spisok-ada-i-blumberg-dobavlyaet-cardano.md)
 
 ## Апдейт Кардано <a id="apdeit-nody-s-versii-1.25.1-na-1.26.1"></a>
 
