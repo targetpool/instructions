@@ -21,9 +21,9 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 e will install Cardano with Cabal. We will use the recommended version 3.4.0.0 and install it in our local bin folder \(.local/bin\).
 
 ```bash
-wget https://downloads.haskell.org/~cabal/cabal-install-3.4.0.0/cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
-tar -xf cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
-rm cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz cabal.sig
+wget  https://downloads.haskell.org/~cabal/cabal-install-latest/cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
+tar -xf cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
+rm cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
 mkdir -p ~/.local/bin
 mv cabal ~/.local/bin/
 ```
@@ -63,10 +63,10 @@ Let's move on to the next steps - installing GHC - the Haskell code compiler \(C
 mkdir -p ~/git
 cd ~/git
 
-wget https://downloads.haskell.org/ghc/8.10.2/ghc-8.10.2-x86_64-deb9-linux.tar.xz
-tar -xf ghc-8.10.2-x86_64-deb9-linux.tar.xz
-rm ghc-8.10.2-x86_64-deb9-linux.tar.xz
-cd ghc-8.10.2
+wget https://downloads.haskell.org/ghc/latest/ghc-9.0.1-x86_64-deb10-linux.tar.xz
+tar -xf ghc-9.0.1-x86_64-deb10-linux.tar.xz
+rm ghc-9.0.1-x86_64-deb10-linux.tar.xz
+cd ghc-9.0.1
 ./configure
 sudo make install
 ```

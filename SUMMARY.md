@@ -18,13 +18,17 @@
 
 ## CARDANO NODE UPDATE
 
-* [Installing zRAM](cardano-node-update/installing-zram.md)
 * [Upgrading from 1.25.1 to 1.26.1](cardano-node-update/upgrading-from-1.25.1-to-1.26.1.md)
 * [Upgrade from 1.26.1 to 1.26.2](cardano-node-update/upgrade-from-1.26.1-to-1.26.2.md)
 * [Upgrading from 1.26.2 to 1.27.0](cardano-node-update/upgrading-from-1.26.2-to-1.27.0.md)
-* [Installing Cardano SMASH server](cardano-node-update/installing-cardano-smash-server.md)
 
 ## General Crypto
 
 * [How to buy and sell crypto for Dummies](general-crypto/how-to-buy-and-sell-crypto-for-dummies.md)
+
+## Cardano Extras
+
+* [Installing Cardano SMASH server](cardano-extras/installing-cardano-smash-server/README.md)
+  * [Installing zRAM](cardano-extras/installing-cardano-smash-server/installing-zram.md)
+* [Untitled](cardano-extras/untitled.md)
 
