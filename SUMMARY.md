@@ -40,3 +40,7 @@
 
 * [Как купить и продать крипто валюту для чайников](crypto-general/kak-kupit-i-prodat-kripto-valyutu-dlya-chainikov.md)
 
+## Installing a cold machine
+
+* [Installing and configuring VM](installing-a-cold-machine/installing-and-configuring-vm.md)
+
