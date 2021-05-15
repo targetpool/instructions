@@ -45,6 +45,8 @@ git fetch --all --tags && git tag
 Lets install using GHC.
 
 ```text
+cabal clean
+cabal update
 cabal configure --with-compiler=ghc-8.10.2
 ```
 
@@ -66,14 +68,18 @@ let's copy the compiled bin \(executive\) files into the folder we created earli
 
 Now we need to shut down the server and take a snapshot of the machine
 
+```text
+
+```
+
 sudo shutdown -h now
 
 ![](.gitbook/assets/image%20%2817%29.png)
 
 ```text
 mkdir -p ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.25.1/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.25.1/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.27.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.27.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
 ```
 
 Check the installed version and location
@@ -81,14 +87,13 @@ Check the installed version and location
 ```text
 which cardano-node && which cardano-cli
 cardano-node --version
+Cardano-cli --version
 
 ```
 
-> cardano-node --version cardano-node 1.26.2 - linux-x86\_64 - ghc-8.10   
-> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
+> cardano-node 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
 
-> cardano-cli 1.26.2 - linux-x86\_64 - ghc-8.10   
-> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
+> cardano-cli 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
 
 
 
