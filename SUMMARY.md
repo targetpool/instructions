@@ -28,8 +28,8 @@
 
 ## Cardano Extras
 
-* [Installing Cardano SMASH server](cardano-extras/installing-cardano-smash-server/README.md)
-  * [Installing zRAM](cardano-extras/installing-cardano-smash-server/installing-zram.md)
+* [Installing zRAM](cardano-extras/installing-zram.md)
+* [Installing Cardano SMASH server](cardano-extras/installing-cardano-smash-server.md)
 
 ## Installing a cold machine
 

@@ -2,15 +2,15 @@
 
 Download Ubuntu [https://ubuntu.com/download/server](https://ubuntu.com/download/server)
 
-![](../../.gitbook/assets/image%20%2868%29.png)
+![](../../.gitbook/assets/image%20%2870%29.png)
 
-![](../../.gitbook/assets/image%20%2875%29.png)
+![](../../.gitbook/assets/image%20%2877%29.png)
 
 Click on the plus and specify the path to the ubuntu ISO
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
-![](../../.gitbook/assets/image%20%2849%29.png)
+![](../../.gitbook/assets/image%20%2850%29.png)
 
 Your ubuntu installation will start. Within Ubuntu installation just stick to default settings. Congratulations your Ubuntu VM is installed. Now you can follow cardano node installation instructions.   
   

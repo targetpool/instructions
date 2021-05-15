@@ -56,7 +56,7 @@ If you check the above command in a couple of minuted you will see that zRAM par
  sudo nano /etc/default/zramswap
 ```
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 I changed the allocated space to 512. then you need to exit and save the file and restart the service
 
