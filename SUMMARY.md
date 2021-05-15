@@ -42,5 +42,6 @@
 
 ## Installing a cold machine
 
+* [Installing VirtualBox](installing-a-cold-machine/installing-virtualbox.md)
 * [Installing and configuring VM](installing-a-cold-machine/installing-and-configuring-vm.md)
 
