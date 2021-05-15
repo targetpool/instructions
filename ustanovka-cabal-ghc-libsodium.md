@@ -63,10 +63,10 @@ Let's move on to the next steps - installing GHC - the Haskell code compiler \(C
 mkdir -p ~/git
 cd ~/git
 
-wget https://downloads.haskell.org/ghc/latest/ghc-9.0.1-x86_64-deb10-linux.tar.xz
-tar -xf ghc-9.0.1-x86_64-deb10-linux.tar.xz
-rm ghc-9.0.1-x86_64-deb10-linux.tar.xz
-cd ghc-9.0.1
+wget https://downloads.haskell.org/ghc/8.10.2/ghc-8.10.2-x86_64-deb9-linux.tar.xz
+tar -xf ghc-8.10.2-x86_64-deb9-linux.tar.xz
+rm ghc-8.10.2-x86_64-deb9-linux.tar.xz
+cd ghc-8.10.2
 ./configure
 sudo make install
 ```
@@ -80,7 +80,7 @@ ghc --version
 you should see something like this:
 
 > cardano@localhost:~$ **ghc --version**  
-> The Glorious Glasgow Haskell Compilation System, version 9.0.1
+> The Glorious Glasgow Haskell Compilation System, version 8.10.2
 
 ## Installing  Libsodium
 
