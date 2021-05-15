@@ -32,17 +32,17 @@ cat > mainnet-topology.json << EOF
   "Producers": [
     {
       "addr": "вставьте ip-адрес вашего БП",
-      "port": 3001,
+      "port": 2008,
       "valency": 2
     },
     {
       "addr": "relays-new.cardano-mainnet.iohk.io",
-      "port": 3001,
+      "port": 2007,
       "valency": 2
     },
     {
       "addr": "68.183.6.89",
-      "port": 3000,
+      "port": 2007,
       "valency": 1
     }
   ]
@@ -50,10 +50,10 @@ cat > mainnet-topology.json << EOF
 EOF
 ```
 
-Ваши реле должны быть на другом порту, нежели ваш БП. давайте настроим ваши реле на порт 3000 и вашего продюсера на порт 3001. когда вы запустите эту команду на продюсере, измените порт на 3001.
+Ваши реле должны быть на другом порту, нежели ваш БП. давайте настроим ваши реле на порт 2008 и вашего продюсера на порт 2007. когда вы запустите эту команду на продюсере, измените порт на 2007.
 
 ```text
-cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 3000 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
+cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 2008 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
 ```
 
 Если вы видите цветной текст, ваш нод был правильно сконфигурирован. Теперь вы можете отменить процесс, нажав Cntl+C

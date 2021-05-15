@@ -33,12 +33,12 @@ git fetch --all --recurse-submodules --tags
 > 1.18.1  
 > 1.19.1  
 > .......  
-> 1.26.2
+> 1.27.0
 
-\(на момент написания данной инструкции\) последняя версия Mainnet Tag - 1.26.1, так что давайте ее скачаем!
+\(на момент написания данной инструкции\) последняя версия Mainnet Tag - 1.27.0, так что давайте ее скачаем!
 
 ```text
- git checkout tags/1.26.2
+ git checkout tags/1.27.0
 ```
 
 Давайте установим с помощью GHC.
@@ -71,8 +71,8 @@ sudo shutdown -h now
 
 ```text
 mkdir -p ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.25.1/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.25.1/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.27.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.27.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
 ```
 
 Проверим установленную версию и местоположение
@@ -83,9 +83,7 @@ cardano-node --version
 cardano-cli --version
 ```
 
-> cardano-node 1.26.2 - linux-x86\_64 - ghc-8.10   
-> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
-
-> cardano-cli 1.26.2 - linux-x86\_64 - ghc-8.10   
-> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
+> > cardano-node 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
+>
+> > cardano-cli 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
 
