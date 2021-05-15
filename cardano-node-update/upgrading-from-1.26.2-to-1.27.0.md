@@ -1,12 +1,8 @@
 # Upgrading from 1.26.2 to 1.27.0
 
-working on this right now, coming soon
+If you are running version 1.26.2 you need to upgrade your pool to 1.27.0 . Please use the instructions below to upgrade your pool.​ If you have an ability to take a snapshot of your machine then do so now, just in case.
 
-
-
-If you are running version 1.26.2 you need to upgrade your pool to 1.27.0 . Please use the instructions below to upgrade your pool.​
-
-you will have to create a backup of your binaries
+You will have to create a backup of your binaries
 
 ```text
 cd .local/bin/​# let's create a folder with the version numbermkdir -p $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')​# copying files to the created foldercp cardano-node $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')/cp cardano-cli $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')/
@@ -45,13 +41,42 @@ git checkout tags/1.27.0
 ####  update cabal and install using GHC
 
 ```text
-cabal clean
-cabal update
-
-cabal configure --with-compiler=ghc-8.10.2
+wget  https://downloads.haskell.org/~cabal/cabal-install-latest/cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
+tar -xf cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
+rm cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
+mkdir -p ~/.local/bin
+mv cabal ~/.local/bin/
 ```
 
+```text
+echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc 
+source ~/.bashrc 
+echo $PATH
+```
+
+```text
+cabal clean
+cabal update
+cabal --version
+```
+
+you should see something like this
+
+> **cardano@localhost**:**~**$  cabal update  
+> cabal --version  
+> Config file path source is default config file.  
+> Config file /home/cardano/.cabal/config not found.  
+> Writing default configuration to /home/cardano/.cabal/config  
+> Downloading the latest package list from hackage.haskell.org
+
+> **cabal-install version 3.4.0.0  
+> compiled using version 3.4.0.0 of the Cabal library**
+
 #### Adding flags for the libsodium library
+
+```text
+cabal configure --with-compiler=ghc-8.10.2
+```
 
 ```text
 echo "package cardano-crypto-praos" >>  cabal.project.local

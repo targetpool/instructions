@@ -1,8 +1,6 @@
 # Upgrade from 1.26.1 to 1.26.2
 
-## Upgrade from 1.26.1 to 1.26.2
-
-If you are running version 1.26.2 you need to upgrade your pool. Please use the instructions below to upgrade your pool.​
+If you are running version 1.26.1 you need to upgrade your pool. Please use the instructions below to upgrade your pool.​
 
 you will have to create a backup of your binaries
 
