@@ -33,6 +33,7 @@
 ## Апдейт Кардано <a id="apdeit-nody-s-versii-1.25.1-na-1.26.1"></a>
 
 * [Upgrade from 1.26.2 to 1.27.0](apdeit-nody-s-versii-1.25.1-na-1.26.1/upgrade-from-1.26.2-to-1.27.0.md)
+* [Обновление с версии 1.26.1 до 1.26.2](apdeit-nody-s-versii-1.25.1-na-1.26.1/obnovlenie-s-versii-1.26.1-do-1.26.2.md)
 * [Апгрейд с версии 1.25.1 на 1.26.1](apdeit-nody-s-versii-1.25.1-na-1.26.1/untitled.md)
 
 ## Crypto General
