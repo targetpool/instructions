@@ -30,5 +30,10 @@
 
 * [Installing Cardano SMASH server](cardano-extras/installing-cardano-smash-server/README.md)
   * [Installing zRAM](cardano-extras/installing-cardano-smash-server/installing-zram.md)
-* [Installing Ubuntu on Windows](cardano-extras/untitled.md)
+
+## Installing a cold machine
+
+* [Installing VirtualBox](installing-a-cold-machine/untitled/README.md)
+  * [Create Virtual Machine](installing-a-cold-machine/untitled/create-virtual-machine.md)
+  * [Running your VM and Installing Ubuntu](installing-a-cold-machine/untitled/running-your-vm-and-installing-ubuntu.md)
 
