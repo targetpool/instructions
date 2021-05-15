@@ -32,10 +32,8 @@
 
 ## Апдейт Кардано <a id="apdeit-nody-s-versii-1.25.1-na-1.26.1"></a>
 
-* [Установка zRAM](apdeit-nody-s-versii-1.25.1-na-1.26.1/ustanovka-zram.md)
-* [Апгрейд с версии 1.25.1 на 1.26.1](apdeit-nody-s-versii-1.25.1-na-1.26.1/untitled.md)
 * [Upgrade from 1.26.2 to 1.27.0](apdeit-nody-s-versii-1.25.1-na-1.26.1/upgrade-from-1.26.2-to-1.27.0.md)
-* [Cardano Smash Server](apdeit-nody-s-versii-1.25.1-na-1.26.1/cardano-smash-server.md)
+* [Апгрейд с версии 1.25.1 на 1.26.1](apdeit-nody-s-versii-1.25.1-na-1.26.1/untitled.md)
 
 ## Crypto General
 
@@ -45,4 +43,9 @@
 
 * [Installing VirtualBox](installing-a-cold-machine/installing-virtualbox.md)
 * [Installing and configuring VM](installing-a-cold-machine/installing-and-configuring-vm.md)
+
+## Кардано  Доп
+
+* [Cardano Smash Server](kardano-dop/cardano-smash-server.md)
+* [Установка zRAM](kardano-dop/ustanovka-zram.md)
 
