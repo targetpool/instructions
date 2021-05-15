@@ -15,6 +15,7 @@
 
 * [Configuration of the Cardano node](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Launch of the Cardano node](cardano-node-configuration-1/zapusk-nody-kardano.md)
+* [Installing CNtools](cardano-node-configuration-1/installing-cntools.md)
 
 ## CARDANO NODE UPDATE
 
