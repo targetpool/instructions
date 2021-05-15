@@ -1,4 +1,4 @@
-# Cardano node 1.26.2 Installation Instructions
+# Cardano node 1.27.0 Installation Instructions
 
 Cardano Node Installation Guide 1.26.2 \(MainNet\) for Dummies.
 
