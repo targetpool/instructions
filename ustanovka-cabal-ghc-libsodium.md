@@ -80,7 +80,7 @@ ghc --version
 you should see something like this:
 
 > cardano@localhost:~$ **ghc --version**  
-> The Glorious Glasgow Haskell Compilation System, version 8.10.2
+> The Glorious Glasgow Haskell Compilation System, version 9.0.1
 
 ## Installing  Libsodium
 
