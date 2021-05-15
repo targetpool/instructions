@@ -21,6 +21,7 @@ Now you should have a new folder - cardano-node with the source code of the card
 ```text
 cd cardano-node
 git fetch --all --recurse-submodules --tags
+git fetch --all --tags && git tag
 ```
 
 
@@ -33,12 +34,12 @@ git fetch --all --recurse-submodules --tags
 > 1.18.1  
 > 1.19.1  
 > .......  
-> 1.26.2
+> 1.27.0
 
-\(as of this writing\) the latest version of Mainnet Tag is 1.26.2, so let's download it!
+\(as of this writing\) the latest version of Mainnet Tag is 1.27.0, so let's download it!
 
 ```text
- git checkout tags/1.26.2
+ git checkout tags/1.27.0
 ```
 
 Lets install using GHC.
