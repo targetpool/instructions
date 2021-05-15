@@ -2,15 +2,17 @@
 
 Download Ubuntu [https://ubuntu.com/download/server](https://ubuntu.com/download/server)
 
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/image%20%2865%29.png)
 
 Click on the plus and specify the path to the ubuntu ISO
 
-![](../../.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/image%20%2853%29.png)
 
 ![](../../.gitbook/assets/image%20%2844%29.png)
 
-
+Your ubuntu installation will start. Within Ubuntu installation just stick to default settings. Congratulations your Ubuntu VM is installed. Now you can follow cardano node installation instructions.   
+  
+On this machine you can install CNTOOLS and keep all of your pool keys, also you can do all system upgrades on this machine first and then copy the binaries to your live nodes, that will significantly reduce the downtime of your servers. Copying binaries stopping and starting a node takes about 2 minutes, upgrading on a live server you will be down for hours!
 

@@ -18,13 +18,13 @@ Execute the downloaded file
 
 ![](../../.gitbook/assets/image%20%2832%29.png)
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/image%20%2857%29.png)
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+![](../../.gitbook/assets/image%20%2854%29.png)
 
 Allocate about 50gigs
 
 ![](../../.gitbook/assets/image%20%2849%29.png)
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2866%29.png)
 
