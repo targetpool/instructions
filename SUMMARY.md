@@ -34,6 +34,7 @@
 
 * [Установка zRAM](apdeit-nody-s-versii-1.25.1-na-1.26.1/ustanovka-zram.md)
 * [Апгрейд с версии 1.25.1 на 1.26.1](apdeit-nody-s-versii-1.25.1-na-1.26.1/untitled.md)
+* [Upgrade from 1.26.2 to 1.27.0](apdeit-nody-s-versii-1.25.1-na-1.26.1/upgrade-from-1.26.2-to-1.27.0.md)
 * [Cardano Smash Server](apdeit-nody-s-versii-1.25.1-na-1.26.1/cardano-smash-server.md)
 
 ## Crypto General
