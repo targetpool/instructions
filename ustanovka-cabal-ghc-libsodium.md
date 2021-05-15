@@ -87,6 +87,7 @@ you should see something like this:
 Create folder git, in which we will compile libsodium library:
 
 ```bash
+mkdir -p ~/git
 cd ~/git
 ```
 
