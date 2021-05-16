@@ -19,9 +19,9 @@
 
 ## CARDANO NODE UPDATE
 
-* [Upgrading from 1.25.1 to 1.26.1](cardano-node-update/upgrading-from-1.25.1-to-1.26.1.md)
-* [Upgrade from 1.26.1 to 1.26.2](cardano-node-update/upgrade-from-1.26.1-to-1.26.2.md)
 * [Upgrading from 1.26.2 to 1.27.0](cardano-node-update/upgrading-from-1.26.2-to-1.27.0.md)
+* [Upgrade from 1.26.1 to 1.26.2](cardano-node-update/upgrade-from-1.26.1-to-1.26.2.md)
+* [Upgrading from 1.25.1 to 1.26.1](cardano-node-update/upgrading-from-1.25.1-to-1.26.1.md)
 
 ## General Crypto
 
