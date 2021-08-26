@@ -4,7 +4,7 @@ description: >-
   2021https://www.crypto-news-flash.com/cardanos-iohk-joins-hands-with-european-business-university-of-luxembourg-to-make-education-accessible-in-africa/?ut
 ---
 
-# Cardano’s IOHK joins hands with European Business University of Luxembourg to make education accessi
+# IOHK Cardano объединяется с Европейским университетом бизнеса Люксембурга, чтобы сделать образование
 
 Компания IOHK объявила о своем партнерстве с EBU - Европейским университетом бизнеса Люксембурга. В рамках программы сертификатов EBU университет включит Haskell в свой учебный план. Cardano \(ADA\) была в новостях в связи с недавним ралли цены на рынке. Предстоящий хардфорк Alonzo вызвал большой ажиотаж среди инвесторов. Материнская группа Cardano - IOHK - продолжает осуществлять сложные проекты.
 
