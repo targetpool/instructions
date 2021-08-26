@@ -20,6 +20,7 @@
 
 ---
 
+* [Cardano’s IOHK joins hands with European Business University of Luxembourg to make education accessi](cardanos-iohk-joins-hands-with-european-business-university-of-luxembourg-to-make-education-accessi.md)
 * [Почему покер - это возможность для Cardano](pochemu-poker-eto-vozmozhnost-dlya-cardano.md)
 * [Хоскинсон отмечает смарт-контракты Ethereum на Cardano и то, как эта компания обеспечивает их работу](khoskinson-otmechaet-smart-kontrakty-ethereum-na-cardano-i-to-kak-eta-kompaniya-obespechivaet-ikh-ra.md)
 * [Предстоящее обновление Алонцо от Cardano подталкивает цену ADA, несмотря на большую задержку.](predstoyashee-obnovlenie-alonco-ot-cardano-podtalkivaet-cenu-ada-nesmotrya-na-bolshuyu-zaderzhku..md)
