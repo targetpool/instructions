@@ -19,6 +19,7 @@
 ## Update Cardano
 
 * [zRAM Instalieren](update-cardano/zram-instalieren.md)
+* [Update von 1.26.1 auf 1.27.1](update-cardano/update-von-1.26.1-auf-1.27.1.md)
 * [Upgrade von Version 1.25.1 auf 1.26.1](update-cardano/upgrade-von-version-1.25.1-auf-1.26.1.md)
 * [Installieren eines cardano SMASH-Servers](update-cardano/installieren-eines-cardano-smash-servers.md)
 
