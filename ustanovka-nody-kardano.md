@@ -44,6 +44,8 @@ git fetch --all --recurse-submodules --tags
 Lassen Sie uns das mit GHC einrichten.
 
 ```text
+cabal clean
+cabal update
 cabal configure --with-compiler=ghc-8.10.2
 ```
 
@@ -67,8 +69,8 @@ Kopieren wir die kompilierten bin-Dateien \(Ausführungsdateien\) in den Ordner,
 
 ```text
 mkdir -p ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.25.1/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.25.1/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.27.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.27.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
 ```
 
 Installierte Version und Speicherort prüfen
@@ -79,9 +81,7 @@ cardano-node --version
 cardano-cli --version
 ```
 
-> cardano-node 1.26.2 - linux-x86\_64 - ghc-8.10   
-> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
-
-> cardano-cli 1.26.2 - linux-x86\_64 - ghc-8.10   
-> git rev 62f38470098fc65e7de5a4b91e21e36ac30799f3
+> > cardano-node 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
+>
+> > cardano-cli 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
 
