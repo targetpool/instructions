@@ -1,5 +1,7 @@
 # Dezentralisierung ist das Herzstück von Cardano
 
+Artikel übersetzt von [https://cardanojournal.com/decentralization-is-at-the-heart-of-cardano-160](https://cardanojournal.com/decentralization-is-at-the-heart-of-cardano-160)
+
 Dezentralisierung ist ein absolut zentrales Merkmal von öffentlichen Blockchain-Netzwerken, da es diese Eigenschaft ist, die sie von den aktuellen Protokollen unterscheidet. Lassen Sie uns erklären, was Dezentralisierung ist, wie man sie misst und wie man ihre hohe Qualität langfristig aufrechterhalten kann.
 
 ![](../.gitbook/assets/image%20%2891%29.png)
