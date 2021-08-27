@@ -33,12 +33,12 @@ git fetch --all --recurse-submodules --tags
 > 1.18.1  
 > 1.19.1  
 > .......  
-> 1.26.2
+> 1.27.0
 
-\(zum Zeitpunkt dieses Schreibens\) ist die neueste Version von Mainnet Tag 1.26.2, also laden wir sie herunter!
+\(zum Zeitpunkt dieses Schreibens\) ist die neueste Version von Mainnet Tag 1.27.0, also laden wir sie herunter!
 
 ```text
- git checkout tags/1.26.2
+ git checkout tags/1.27.0
 ```
 
 Lassen Sie uns das mit GHC einrichten.

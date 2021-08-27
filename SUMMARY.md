@@ -1,6 +1,6 @@
 # Table of contents
 
-* [ardano Node Installationsanleitung 1.26.2](README.md)
+* [Cardano Node Installationsanleitung 1.27.0](README.md)
 
 ## Installationsanleitung Ubuntu/Debian <a id="install-guide-ubuntu-debian"></a>
 
