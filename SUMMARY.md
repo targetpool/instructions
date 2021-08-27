@@ -23,7 +23,7 @@
 * [Upgrade von Version 1.25.1 auf 1.26.1](update-cardano/upgrade-von-version-1.25.1-auf-1.26.1.md)
 * [Installieren eines cardano SMASH-Servers](update-cardano/installieren-eines-cardano-smash-servers.md)
 
-## Cardano-Artikel
+## Übersetzte Cardano-Artikel <a id="cardano-artikel"></a>
 
 * [Dezentralisierung ist das Herzstück von Cardano](cardano-artikel/dezentralisierung-ist-das-herzstueck-von-cardano.md)
 * [Cardano und die Macht des Netzwerkeffekts](cardano-artikel/cardano-und-die-macht-des-netzwerkeffekts.md)
