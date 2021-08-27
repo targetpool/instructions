@@ -31,18 +31,18 @@ cat > mainnet-topology.json << EOF
 {
   "Producers": [
     {
-      "addr": "вставьте ip-адрес вашего БП",
-      "port": 3001,
+      "addr": "Insert ip-адрес of your BP",
+      "port": 2008,
       "valency": 2
     },
     {
       "addr": "relays-new.cardano-mainnet.iohk.io",
-      "port": 3001,
+      "port": 2007,
       "valency": 2
     },
     {
       "addr": "68.183.6.89",
-      "port": 3000,
+      "port": 2007,
       "valency": 1
     }
   ]
@@ -50,10 +50,10 @@ cat > mainnet-topology.json << EOF
 EOF
 ```
 
-Ihre Relais sollten an einem anderen Port liegen als Ihr Netzteil. Setzen wir Ihre Relais auf Port 3000 und Ihren Producer auf Port 3001. Wenn Sie diesen Befehl auf dem Producer ausführen, ändern Sie den Port auf 3001.
+Ihre Relais sollten auf einem anderen Port liegen als Ihr BP. Setzen Sie Ihre Relais auf Port 2007 und Ihren Producer auf Port 2008. Wenn Sie diesen Befehl auf dem Producer ausführen, ändern Sie den Port auf 2001.
 
 ```text
-cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 3000 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
+cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 2007 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
 ```
 
 Wenn Sie farbigen Text sehen, wurde Ihr Knoten korrekt konfiguriert. Jetzt können Sie den Vorgang mit der Tastenkombination Strg+C abbrechen
