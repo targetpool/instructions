@@ -2,11 +2,7 @@
 
 **Welcome to the best Cardano training resource on the internet.**   
   
-We create our own Cardano training material and professionally translate it into different languages! 
-
-
-
-In here you can already find step by step instructions In Russian, German and English. Our Youtube channel has also been translated - subtitles are in Russian, Spanish and Japanese.
+We create our own Cardano training material in 3 languages Russian, German and English! 
 
 For Russian and German speakers we also translate Cardano articles and post them under the relevant section on our website and on the Cardano Forum under username timkrav [https://forum.cardano.org/t/ada-cardano/51221](https://forum.cardano.org/t/ada-cardano/51221)
 
