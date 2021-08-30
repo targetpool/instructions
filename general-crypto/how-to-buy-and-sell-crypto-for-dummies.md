@@ -1,7 +1,5 @@
 # How to buy and sell crypto for Dummies
 
-Итак, Вы хотите купить Cardano $ADA или другую крипто-валюту и не знаете с чего начать? Эти пошаговые инструкции для вас. У вас есть много различных вариантов, где купить или продать крипто валюту в этом руководстве я буду предоставлять вам ссылки и инструкции о том, как купить с некоторыми из крупнейших мировых обменов, как crypto.com и Binance.
-
 So you would like to Buy Cardano $ADA or other crypto currency and you don't know where to begin? These step by step instructions are for you! You have many different choices where to buy or sell crypto currency. However,  in this tutorial, I will be providing you with links and instructions on how to buy with some of the worlds largest exchanges like crypto.com and Binance.
 
 {% hint style="info" %}
