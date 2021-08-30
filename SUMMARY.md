@@ -26,6 +26,7 @@
 ## General Crypto
 
 * [How to stake ADA in a Cardano pool](general-crypto/how-to-stake-ada-in-a-cardano-pool.md)
+* [How to download and create your ADA wallet](general-crypto/how-to-download-and-create-your-ada-wallet.md)
 * [How to buy and sell crypto for Dummies](general-crypto/how-to-buy-and-sell-crypto-for-dummies.md)
 
 ## Cardano Extras
