@@ -34,12 +34,12 @@ git fetch --all --tags && git tag
 > 1.18.1  
 > 1.19.1  
 > .......  
-> 1.27.0
+> 1.29.0
 
-\(as of this writing\) the latest version of Mainnet Tag is 1.27.0, so let's download it!
+\(as of this writing\) the latest version of Mainnet Tag is 1.29.0, so let's download it!
 
 ```text
- git checkout tags/1.27.0
+ git checkout tags/1.29.0
 ```
 
 Lets install using GHC.
