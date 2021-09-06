@@ -1,6 +1,6 @@
-# Cardano node 1.27.0 Installation Instructions
+# Cardano node 1.29.0 Installation Instructions
 
-Cardano Node Installation Guide 1.27.0 \(MainNet\) for Dummies.
+Cardano Node Installation Guide 1.29.0 \(MainNet\) for Dummies.
 
 1\) This guide assumes that you have at least a basic knowledge of Linux administration. 2\) We will use Ubuntu as our operating system of choice.
 

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Cardano node 1.27.0 Installation Instructions](README.md)
+* [Cardano node 1.29.0 Installation Instructions](README.md)
 
 ## Install Guide Ubuntu/Debian
 
