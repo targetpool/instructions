@@ -61,13 +61,13 @@ Now we are giving a new user the SSH key that we have created
 Now we want to create a directory where your SSH key will be stored
 
 ```text
-mkdir /home/example_user/.ssh
+mkdir /home/cardano/.ssh
 ```
 
-now we want to create a file where we will copy the SSH key
+Now we want to create a file where we will copy the SSH key. Copy the contents of the user’s public key into. This is a plain text file where you can paste one public key per line.
 
 ```text
-mkdir /home/example_user/.ssh
+vi /home/cardano/.ssh/authorized_keys
 ```
 
 lets give user rights to use the SSH key
