@@ -47,7 +47,7 @@ Lets install using GHC.
 ```text
 cabal clean
 cabal update
-cabal configure --with-compiler=ghc-8.10.2
+cabal configure --with-compiler=ghc-8.10.4
 ```
 
 Starting with version 1.14.x, we need to add libsodium libraries to the Cardano node, so let's do that.
