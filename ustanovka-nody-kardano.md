@@ -69,10 +69,8 @@ let's copy the compiled bin \(executive\) files into the folder we created earli
 Now we need to shut down the server and take a snapshot of the machine
 
 ```text
-
-```
-
 sudo shutdown -h now
+```
 
 ![](.gitbook/assets/image%20%2817%29.png)
 
