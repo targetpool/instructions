@@ -81,6 +81,10 @@ ghc --version
 
 you should see something like this:
 
+{% hint style="info" %}
+At this stage I had a glitch and after running the command above it was still showing an old version. This was fixed by a simple logoff and logon.
+{% endhint %}
+
 > cardano@localhost:~$ **ghc --version**  
 > The Glorious Glasgow Haskell Compilation System, version 8.10.4
 
