@@ -11,6 +11,7 @@ Now you want to download and install all of the updates
 ```
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get install libdw-dev
 ```
 
 ```bash
