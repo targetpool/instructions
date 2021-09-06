@@ -78,8 +78,8 @@ sudo shutdown -h now
 
 ```text
 mkdir -p ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.27.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.27.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-cli-1.29.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-node-1.29.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
 ```
 
 Check the installed version and location
