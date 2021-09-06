@@ -1,5 +1,7 @@
 # Install Cabal, GHC, Libsodium
 
+
+
 Now we need to connect to the server with our newly created user  Cardano, root - we will no longer be using
 
 ![](.gitbook/assets/image%20%2819%29.png)
@@ -62,11 +64,10 @@ Let's move on to the next steps - installing GHC - the Haskell code compiler \(C
 ```bash
 mkdir -p ~/git
 cd ~/git
-
-wget https://downloads.haskell.org/ghc/8.10.2/ghc-8.10.2-x86_64-deb9-linux.tar.xz
-tar -xf ghc-8.10.2-x86_64-deb9-linux.tar.xz
-rm ghc-8.10.2-x86_64-deb9-linux.tar.xz
-cd ghc-8.10.2
+wget https://downloads.haskell.org/ghc/8.10.4/ghc-8.10.4-x86_64-deb9-linux-dwarf.tar.xz
+tar -xf ghc-8.10.4-x86_64-deb9-linux-dwarf.tar.xz
+rm ghc-8.10.4-x86_64-deb9-linux-dwarf.tar.xz
+cd ghc-8.10.4
 ./configure
 sudo make install
 ```

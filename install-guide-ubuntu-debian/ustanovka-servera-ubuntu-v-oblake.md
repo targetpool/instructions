@@ -67,7 +67,7 @@ mkdir /home/cardano/.ssh
 Now we want to create a file where we will copy the SSH key. Copy the contents of the user’s public key into. This is a plain text file where you can paste one public key per line.
 
 ```text
-vi /home/cardano/.ssh/authorized_keys
+nano /home/cardano/.ssh/authorized_keys
 ```
 
 lets give user rights to use the SSH key
