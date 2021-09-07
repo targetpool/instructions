@@ -36,7 +36,11 @@ Setting up Cardano service
 
 
 
-Create file cardano--node.service and paste the following text
+Create file cardano--node.service in /home/cardano and paste the following text 
+
+```text
+nano ~/cardano-node.service
+```
 
 \[Unit\] Description=Shelley Pioneer Pool After=multi-user.target
 
@@ -45,4 +49,16 @@ Create file cardano--node.service and paste the following text
 Restart=on-failure RestartSec=15s WorkingDirectory=~ User=cardano Group=users
 
 \[Install\] WantedBy=multi-user.target
+
+```text
+ sudo cp ~/cardano-node.service /usr/lib/systemd/system
+```
+
+```text
+nano ~/cnode/config/cardano-node.environment
+```
+
+and paste this text with your cardano port number instead of 1234
+
+CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/cnode/config/mainnet-topology.json" DBPATH="/home/cardano/cnode/db/" SOCKETPATH="/home/cardano/cnode/sockets/node.socket" HOSTADDR="0.0.0.0" PORT="1234"
 
