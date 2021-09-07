@@ -55,7 +55,7 @@ EOF
 Your relays should be on a different port than your BP. let's set your relays to port 2007 and your producer to port 2008. when you run this command on the producer, change the port to 2001.
 
 ```text
-cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 2007 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
+cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 2007 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.json
 ```
 
 If you see colored text, your node has been configured correctly. Now you can cancel the process by pressing Cntl+C
