@@ -62,3 +62,13 @@ and paste this text with your cardano port number instead of 1234
 
 CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/cnode/config/mainnet-topology.json" DBPATH="/home/cardano/cnode/db/" SOCKETPATH="/home/cardano/cnode/sockets/node.socket" HOSTADDR="0.0.0.0" PORT="1234"
 
+
+
+```text
+ sudo systemctl enable cardano-node
+```
+
+```text
+ sudo systemctl start cardano-node
+```
+
