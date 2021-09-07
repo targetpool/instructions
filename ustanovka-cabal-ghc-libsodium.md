@@ -13,7 +13,7 @@ sudo apt-get upgrade -y
 
 ```bash
 sudo apt-get install -y curl python3 build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev systemd libsystemd-dev libsodium-dev zlib1g-dev yarn make g++ jq libncursesw5 libtool autoconf git tmux htop nload
-export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/usr/.local/lib:$LD_LIBRARY_PATH"
 ```
 
 Kabale Installation
@@ -23,15 +23,15 @@ Kabale Installation
 ```bash
 wget https://downloads.haskell.org/~cabal/cabal-install-3.4.0.0/cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
 tar -xf cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz
-rm cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz cabal.sig
-mkdir -p ~/.local/bin
+rm cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz 
+mkdir -p ~/.local/bin/
 mv cabal ~/.local/bin/
 ```
 
 Jetzt sollten Sie cabal im Ordner ~/.local/bin/ installiert haben, jetzt müssen wir nur noch sicherstellen, dass das System die cabal bin\(executive\)-Datei auch finden kann. Fügen wir diese Informationen zu unserer Benutzerprofildatei \(.bashrc\) hinzu, laden sie neu \(mit dem Befehl source\) und prüfen, ob unser Ordner ~/.local/bin/ aufgelistet ist.
 
 ```bash
-echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc 
+echo "export PATH=~/.local/bin/:$PATH" >> ~/.bashrc 
 source ~/.bashrc 
 echo $PATH
 ```
