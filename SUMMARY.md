@@ -13,6 +13,7 @@
 
 ## Cardano Node Configuration <a id="cardano-node-configuration-1"></a>
 
+* [Fail2Ban](cardano-node-configuration-1/fail2ban.md)
 * [Configuration of the Cardano node](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Launch of the Cardano node](cardano-node-configuration-1/zapusk-nody-kardano.md)
 * [Installing CNtools](cardano-node-configuration-1/installing-cntools.md)
