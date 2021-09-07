@@ -23,7 +23,7 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 e will install Cardano with Cabal. We will use the recommended version 3.4.0.0 and install it in our local bin folder \(.local/bin\).
 
 ```bash
-wget  https://downloads.haskell.org/~cabal/cabal-install-latest/cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
+wget  https://downloads.haskell.org/~cabal/cabal-install-3.4.0.0/cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
 tar -xf cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
 rm cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz
 mkdir -p ~/.local/bin
