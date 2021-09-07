@@ -25,6 +25,7 @@
 
 ## Übersetzte Cardano-Artikel <a id="cardano-artikel"></a>
 
+* [Wie Cardano in Äthiopien, El Salvador und anderen Entwicklungsländern helfen kann](cardano-artikel/wie-cardano-in-aethiopien-el-salvador-und-anderen-entwicklungslaendern-helfen-kann.md)
 * [Was ist NFT und warum experimentieren wir damit?](cardano-artikel/was-ist-nft-und-warum-experimentieren-wir-damit.md)
 * [Dezentralisierung ist das Herzstück von Cardano](cardano-artikel/dezentralisierung-ist-das-herzstueck-von-cardano.md)
 * [Cardano und die Macht des Netzwerkeffekts](cardano-artikel/cardano-und-die-macht-des-netzwerkeffekts.md)
