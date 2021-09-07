@@ -56,7 +56,7 @@ echo "package cardano-crypto-praos" >>  cabal.project.local
 echo "  flags: -external-libsodium-vrf" >>  cabal.project.local
 ```
 
-ПFor some reason my SSH connection is often interrupted at this point, so in order to avoid this let's run TMUX and there we will start the installation. This will take a few hours
+For some reason my SSH connection is often interrupted at this point, so in order to avoid this let's run TMUX and there we will start the installation. This will take a few hours
 
 ```text
 tmux
