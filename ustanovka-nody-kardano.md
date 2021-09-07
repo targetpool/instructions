@@ -75,17 +75,17 @@ sudo shutdown -h now
 
 ```text
 mkdir -p ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-cli-1.29.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-node-1.29.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+cp -p ~/git/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-cli-1.29.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
+cp -p ~/git/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-node-1.29.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+echo PATH="$PATH:$HOME/.local/bin/" >> $HOME/.bashrc
+source ~/.bashrc
 ```
 
-Check the installed version and location
+Check the installed version and location 
 
 ```text
-which cardano-node && which cardano-cli
 cardano-node --version
 Cardano-cli --version
-
 ```
 
 > cardano-node 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
