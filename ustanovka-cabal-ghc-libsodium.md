@@ -11,11 +11,10 @@ Now you want to download and install all of the updates
 ```
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install libdw-dev
 ```
 
 ```bash
-sudo apt-get install -y curl python3 build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev systemd libsystemd-dev libsodium-dev zlib1g-dev yarn make g++ jq libncursesw5 libtool autoconf git tmux htop nload
+sudo apt-get install curl wget python3 build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev systemd libsystemd-dev libsodium-dev zlib1g-dev yarn make g++ jq libncursesw5 libtool autoconf automake git tmux htop nload -y
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 ```
 
@@ -63,8 +62,6 @@ you should see something like this
 Let's move on to the next steps - installing GHC - the Haskell code compiler \(Cardano is written in Haskell \)
 
 ```bash
-mkdir -p ~/git
-cd ~/git
 wget https://downloads.haskell.org/ghc/8.10.4/ghc-8.10.4-x86_64-deb9-linux.tar.xz
 tar -xf ghc-8.10.4-x86_64-deb9-linux.tar.xz
 rm ghc-8.10.4-x86_64-deb9-linux.tar.xz

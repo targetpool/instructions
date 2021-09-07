@@ -50,6 +50,8 @@ now we want to create a new user Cardano
 sudo adduser cardano
 ```
 
+Adding user `cardano' ... Adding new group`cardano' \(1000\) ... Adding new user `cardano' (1000) with group`cardano' ... Creating home directory `/home/cardano' ... Copying files from`/etc/skel' ... New password: Retype new password: passwd: password updated successfully Changing the user information for cardano Enter the new value, or press ENTER for the default Full Name \[\]: cardano Room Number \[\]: Work Phone \[\]: Home Phone \[\]: Other \[\]: Is the information correct? \[Y/n\] y  
+  
 You want to give your Cardano user admin rights
 
 ```text
