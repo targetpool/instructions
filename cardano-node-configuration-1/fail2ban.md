@@ -72,3 +72,7 @@ CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/
  sudo systemctl start cardano-node
 ```
 
+```text
+ sudo systemctl status cardano-node
+```
+
