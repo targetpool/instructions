@@ -42,3 +42,7 @@
   * [Create Virtual Machine](installing-a-cold-machine/untitled/create-virtual-machine.md)
   * [Running your VM and Installing Ubuntu](installing-a-cold-machine/untitled/running-your-vm-and-installing-ubuntu.md)
 
+## Securing your node
+
+* [Untitled](securing-your-node/untitled.md)
+
