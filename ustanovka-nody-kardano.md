@@ -85,7 +85,7 @@ Check the installed version and location
 
 ```text
 cardano-node --version
-Cardano-cli --version
+cardano-cli --version
 ```
 
 > cardano-node 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
