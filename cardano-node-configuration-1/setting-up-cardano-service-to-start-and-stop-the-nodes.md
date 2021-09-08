@@ -38,19 +38,23 @@ CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/
 nano ~/cnode/config/cardano-node.environment
 ```
 
-
-
-
+Now we need to enable the cardano node
 
 ```text
  sudo systemctl enable cardano-node
 ```
 
+Now we need to start the node. \( to stop the node you will replace "start" with "stop"\) in the command line
+
 ```text
  sudo systemctl start cardano-node
 ```
 
+Now we need to check the status. If everything is working correctly you will see green text "Active Running"
+
 ```text
  sudo systemctl status cardano-node
 ```
+
+
 
