@@ -1,100 +1,58 @@
 # Ausführen eines Cardano Node
 
-Zuvor haben wir das Relais in einer aktiven SSH-Sitzung gestartet, was bedeutet, dass der Knoten nicht mehr funktioniert, sobald wir den Browser schließen.
+Now that we know that our node is functioning properly we need to start it using the service so it will always run in the background
+
+
+
+Create file cardano--node.service in /home/cardano and paste the following text after running the command line
+
+\[Unit\] Description=Shelley Pioneer Pool After=multi-user.target
+
+\[Service\] Type=simple EnvironmentFile=/home/cardano/cnode/config/cardano-node.environment ExecStart=/home/cardano/.local/bin/cardano-node run --config $CONFIG --topology $TOPOLOGY --database-path $DBPATH --socket-path $SOCKETPATH --host-addr $HOSTADDR --port $PORT KillSignal = SIGINT RestartKillSignal = SIGINT StandardOutput=syslog StandardError=syslog SyslogIdentifier=trgt\_event LimitNOFILE=32768
+
+Restart=on-failure RestartSec=15s WorkingDirectory=~ User=cardano Group=users
+
+\[Install\] WantedBy=multi-user.target
 
 ```text
-cd ~/cnode/scripts/
+nano ~/cardano-node.service
 ```
 
-Lassen Sie uns Skripte erstellen
 
-{% tabs %}
-{% tab title="start\_all.sh" %}
-```text
-nano start_all.sh
-```
 
-> \#!/bin/bash
->
-> session="cardano"  
-> \# Check if the session exists, discarding output  
-> \# We can check $? for the exit status \(zero for success, non-zero for failure\)
->
-> tmux has-session -t $session 2&gt;/dev/null  
-> if \[ $? != 0 \]; then  
->  tmux attach-session -t $session  
->  tmux new -s "cardano" -n "node" -d  
->  tmux split-window -v  
->  tmux split-window -h  
->  tmux select-pane -t 'cardano:node.0'  
->  tmux split-window -h  
->  tmux send-keys -t 'cardano:node.0' './node.sh' Enter  
->  tmux send-keys -t 'cardano:node.1' 'htop' Enter  
->  tmux send-keys -t 'cardano:node.2' 'nload' Enter  
->  tmux send-keys -t 'cardano:node.3' Enter  
-> fi  
->   
-> tmux attach-session -t $session
-{% endtab %}
 
-{% tab title="stop\_all.sh" %}
-```text
-nano stop_all.sh
-```
 
-> \#!/bin/bash
->
-> \# Check if the session exists, discarding output  
-> \# We can check $? for the exit status \(zero for success, non-zero for failure\)
-
-> session="cardano"  
-> \# Check if the session exists, discarding output  
-> \# We can check $? for the exit status \(zero for success, non-zero for failure\)  
->   
-> tmux has-session -t $session 2&gt;/dev/null  
-> if \[ $? != 0 \]; then  
->         echo "Session not found."  
-> else  
->         echo "Killing session"  
->         tmux kill-session -t cardano  
-> fi
-{% endtab %}
-
-{% tab title="node.sh" %}
-```text
-nano node.sh
-```
-
-> \#!/bin/bash  
-> cardano-node run \  
->   --database-path  ~/cnode/db/ \  
->   --socket-path ~/cnode/sockets/node.socket \  
->   --port 3000 \  
->   --config ~/cnode/config/mainnet-config.json \  
->   --topology ~/cnode/config/mainnet-topology.json
-{% endtab %}
-{% endtabs %}
+We created the file in a temporary location because Cardano user does not have rights to create a file where we want it, so Now we need to copy it in its permanent place using sudo command. 
 
 ```text
-chmod +x start_all.sh stop_all.sh node.sh
+sudo cp ~/cardano-node.service /usr/lib/systemd/system
 ```
 
-Kopieren wir sie in den Ordner "Scripts".
+Now we need to create a second file. and paste this text with your cardano port number instead of 1234 \(insert this text\)
+
+CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/cnode/config/mainnet-topology.json" DBPATH="/home/cardano/cnode/db/" SOCKETPATH="/home/cardano/cnode/sockets/node.socket" HOSTADDR="0.0.0.0" PORT="1234"
 
 ```text
-cp *.sh ~/cnode/scripts/
+nano ~/cnode/config/cardano-node.environment
 ```
 
-Nachdem Sie diese Skripte erstellt haben, müssen Sie sie mit dem Befehl chmod ausführbar machen
+Now we need to enable the cardano node
 
 ```text
-cd ~/cnode/scripts/
-chmod +x start_all.sh stop_all.sh node.sh
+ sudo systemctl enable cardano-node
 ```
 
-Nun starten wir einen Knoten in TMUX.
+Now we need to start the node. \( to stop the node you will replace "start" with "stop"\) in the command line
 
 ```text
-./start_all.sh
+ sudo systemctl start cardano-node
 ```
+
+Now we need to check the status. If everything is working correctly you will see green text "Active Running"
+
+```text
+ sudo systemctl status cardano-node
+```
+
+
 

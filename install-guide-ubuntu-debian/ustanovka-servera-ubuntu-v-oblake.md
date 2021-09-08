@@ -58,10 +58,10 @@ SSH-Schlüssel für neuen Benutzer verbinden Erstellen Sie das Verzeichnis, in d
 mkdir /home/example_user/.ssh
 ```
 
-Erstellen Sie eine Datei und kopieren Sie unseren SSH-Schlüssel dorthin, speichern und beenden Sie
+Nun müssen wir eine Datei erstellen, in die wir den SSH-Schlüssel kopieren. Kopieren Sie den Inhalt des öffentlichen Schlüssels des Benutzers in eine einfache Textdatei, in die Sie einen öffentlichen Schlüssel pro Zeile einfügen können.
 
 ```text
-mkdir /home/example_user/.ssh
+nano /home/cardano/.ssh/authorized_keys
 ```
 
 Erlauben Sie einem Benutzer, den SSH-Schlüssel zu verwenden
@@ -91,13 +91,7 @@ sudo swapon /swapfile
 
 ```
 
-
-
-```text
-sudo swapon /swapfile
-```
-
-SWAP-Datei dauerhaft machen
+Jetzt wollen Sie die Auslagerungsdatei dauerhaft machen
 
 ```text
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
