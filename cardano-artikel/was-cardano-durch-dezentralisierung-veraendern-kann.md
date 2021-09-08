@@ -2,6 +2,10 @@
 
 Vielen Neulingen im Bereich der Kryptowährungen ist nicht klar, was genau Dezentralisierung ist und, was noch wichtiger ist, was sie verändern kann. In diesem Artikel wird untersucht, wie das Cardano-Protokoll dezentralisiert ist, und anschließend wird erörtert, was sich durch Dezentralisierung in unserer Gesellschaft alles ändern kann.
 
+## 
+
+![](https://cardanians.io/_storage/46/o.8575f7fda2026566c474dc3c697b549b.jpg)
+
 ## Wie eine zentralisierte Welt funktioniert 
 
 Das Internet ist das Herzstück unserer Arbeit, und alles, was auf digitaler Ebene geschieht, hat Überschneidungen mit der physischen Welt. Wenn wir einen Wert mit jemandem aus der Ferne austauschen wollen, müssen wir das zuerst in der physischen Welt erledigen. Das bedeutet, dass sowohl Alice als auch Bob ein Konto bei ihrer Bank eröffnen müssen. In der Praxis gehen sie in die Filiale, geben die notwendigen Informationen über sich an, und der Angestellte richtet das Konto ein. Wenn Alice Bob Geld schicken will, muss sie ihn nach seiner Kontonummer fragen. Bob sieht dann die Transaktion von Alice in seinem Online-Banking und kennt ihr Bankkonto. Es ist wichtig zu wissen, dass die Bank bei dieser Transaktion die Rolle eines Vermittlers spielt. Was bedeutet es eigentlich, ein zentraler Vermittler in einer traditionellen Welt zu sein?
