@@ -20,7 +20,7 @@
 * [Upgrade von Version 1.25.1 auf 1.26.1](update-cardano/upgrade-von-version-1.25.1-auf-1.26.1.md)
 * [Installieren eines cardano SMASH-Servers](update-cardano/installieren-eines-cardano-smash-servers.md)
 
-## Übersetzte Cardano-Artikel <a id="cardano-artikel"></a>
+## unsere Übersetzten Cardano-Artikel <a id="cardano-artikel"></a>
 
 * [Was Cardano durch Dezentralisierung verändern kann](cardano-artikel/was-cardano-durch-dezentralisierung-veraendern-kann.md)
 * [Wie Cardano in Äthiopien, El Salvador und anderen Entwicklungsländern helfen kann](cardano-artikel/wie-cardano-in-aethiopien-el-salvador-und-anderen-entwicklungslaendern-helfen-kann.md)
