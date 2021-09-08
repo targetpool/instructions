@@ -52,7 +52,7 @@ cat > mainnet-topology.json << EOF
 EOF
 ```
 
-Ваши реле должны быть на другом порту, нежели ваш БП. давайте настроим ваши реле на порт 2008 и вашего продюсера на порт 2007. когда вы запустите эту команду на продюсере, измените порт на 2007.
+Ваши реле должны быть на другом порту, нежели ваш БП. давайте настроим ваши реле на порт 2007 и вашего продюсера на порт 2008. когда вы запустите эту команду на продюсере, измените порт на 2007.
 
 ```text
 cardano-node run --database-path /home/cardano/cnode/db --socket-path /home/cardano/cnode/sockets/node.socket --port 2008 --config /home/cardano/cnode/config/mainnet-config.json  --topology /home/cardano/cnode/config/mainnet-topology.jso
