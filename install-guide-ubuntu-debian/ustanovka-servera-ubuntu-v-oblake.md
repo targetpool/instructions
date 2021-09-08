@@ -69,7 +69,7 @@ mkdir /home/example_user/.ssh
 Создаем файл и копируем туда наш SSH ключ, сохраняем и выходим
 
 ```text
-mkdir /home/example_user/.ssh
+nano /home/cardano/.ssh/authorized_keys
 ```
 
 Даем пользователю права на использование SSH ключа
@@ -95,13 +95,6 @@ sudo chmod 600 /swapfile
 
 ```text
 sudo mkswap /swapfile
-sudo swapon /swapfile
-
-```
-
-Делаем бэкап
-
-```text
 sudo swapon /swapfile
 ```
 
