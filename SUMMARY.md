@@ -13,7 +13,6 @@
 
 ## Cardano Node Configuration <a id="cardano-node-configuration-1"></a>
 
-* [Fail2Ban](cardano-node-configuration-1/fail2ban.md)
 * [Configuration of the Cardano node](cardano-node-configuration-1/cardano-node-configuration.md)
 * [Setting Up Cardano service to start and stop the nodes](cardano-node-configuration-1/setting-up-cardano-service-to-start-and-stop-the-nodes.md)
 * [Launch of the Cardano node](cardano-node-configuration-1/zapusk-nody-kardano.md)
@@ -44,5 +43,5 @@
 
 ## Securing your node
 
-* [Untitled](securing-your-node/untitled.md)
+* [Fail2Ban](securing-your-node/fail2ban.md)
 
