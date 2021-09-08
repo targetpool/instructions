@@ -1,100 +1,50 @@
 # Запуск ноды Кардано
 
-Ранее мы запустили реле в активной ssh сессии, что означает, что как только мы закроем браузер, узел перестанет работать.поэтому нам нужно запустить его из TMUX.
+Ранее мы запустили реле в активной ssh сессии, что означает, что как только мы закроем браузер, узел перестанет работать.поэтому нам нужно запустить его с помощью службы, чтобы он всегда работал в фоновом режиме
+
+Создайте файл cardano--node.service в /home/cardano и вставьте следующий текст после выполнения командной строки
+
+\[Unit\] Description=Shelley Pioneer Pool After=multi-user.target
+
+\[Service\] Type=simple EnvironmentFile=/home/cardano/cnode/config/cardano-node.environment ExecStart=/home/cardano/.local/bin/cardano-node run --config $CONFIG --topology $TOPOLOGY --database-path $DBPATH --socket-path $SOCKETPATH --host-addr $HOSTADDR --port $PORT KillSignal = SIGINT RestartKillSignal = SIGINT StandardOutput=syslog StandardError=syslog SyslogIdentifier=trgt\_event LimitNOFILE=32768
+
+Restart=on-failure RestartSec=15s WorkingDirectory=~ User=cardano Group=users
+
+\[Install\] WantedBy=multi-user.target
 
 ```text
-cd ~/cnode/scripts/
+nano ~/cardano-node.service
 ```
 
-Давайте создадим скрипты
+Мы создали файл во временном месте, потому что у пользователя Cardano нет прав на создание файла там, где мы хотим, поэтому теперь нам нужно скопировать его в постоянное место с помощью команды sudo.
 
-{% tabs %}
-{% tab title="start\_all.sh" %}
 ```text
-nano start_all.sh
+sudo cp ~/cardano-node.service /usr/lib/systemd/system
 ```
 
-> \#!/bin/bash
->
-> session="cardano"  
-> \# Check if the session exists, discarding output  
-> \# We can check $? for the exit status \(zero for success, non-zero for failure\)
->
-> tmux has-session -t $session 2&gt;/dev/null  
-> if \[ $? != 0 \]; then  
->  tmux attach-session -t $session  
->  tmux new -s "cardano" -n "node" -d  
->  tmux split-window -v  
->  tmux split-window -h  
->  tmux select-pane -t 'cardano:node.0'  
->  tmux split-window -h  
->  tmux send-keys -t 'cardano:node.0' './node.sh' Enter  
->  tmux send-keys -t 'cardano:node.1' 'htop' Enter  
->  tmux send-keys -t 'cardano:node.2' 'nload' Enter  
->  tmux send-keys -t 'cardano:node.3' Enter  
-> fi  
->   
-> tmux attach-session -t $session
-{% endtab %}
+Теперь нам нужно создать второй файл. и вставьте этот текст с номером порта вашей ноды кардано вместо 1234 \(вставьте этот текст\)
 
-{% tab title="stop\_all.sh" %}
+CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/cnode/config/mainnet-topology.json" DBPATH="/home/cardano/cnode/db/" SOCKETPATH="/home/cardano/cnode/sockets/node.socket" HOSTADDR="0.0.0.0" PORT="1234"
+
 ```text
-nano stop_all.sh
+nano ~/cnode/config/cardano-node.environment
 ```
 
-> \#!/bin/bash
->
-> \# Check if the session exists, discarding output  
-> \# We can check $? for the exit status \(zero for success, non-zero for failure\)
+Теперь нам нужно активировать ноду cardano
 
-> session="cardano"  
-> \# Check if the session exists, discarding output  
-> \# We can check $? for the exit status \(zero for success, non-zero for failure\)  
->   
-> tmux has-session -t $session 2&gt;/dev/null  
-> if \[ $? != 0 \]; then  
->         echo "Session not found."  
-> else  
->         echo "Killing session"  
->         tmux kill-session -t cardano  
-> fi
-{% endtab %}
-
-{% tab title="node.sh" %}
 ```text
-nano node.sh
+ sudo systemctl enable cardano-node
 ```
 
-> \#!/bin/bash  
-> cardano-node run \  
->   --database-path  ~/cnode/db/ \  
->   --socket-path ~/cnode/sockets/node.socket \  
->   --port 3000 \  
->   --config ~/cnode/config/mainnet-config.json \  
->   --topology ~/cnode/config/mainnet-topology.json
-{% endtab %}
-{% endtabs %}
+Теперь нам нужно запустить ноду. \(Чтобы остановить ноду, замените "start" на "stop"\) в командной строке
 
 ```text
-chmod +x start_all.sh stop_all.sh node.sh
+ sudo systemctl start cardano-node
 ```
 
-давайте скопируем их в папку со Скриптами.
+Теперь нам нужно проверить состояние. Если все работает правильно, вы увидите зеленый текст "Active Running".
 
 ```text
-cp *.sh ~/cnode/scripts/
-```
-
-После создания этих сценариев вам нужно будет сделать их исполняемыми с помощью команды chmod
-
-```text
-cd ~/cnode/scripts/
-chmod +x start_all.sh stop_all.sh node.sh
-```
-
-Теперь мы запускаем ноду в TMUX.
-
-```text
-./start_all.sh
+ sudo systemctl status cardano-node
 ```
 
