@@ -1,10 +1,8 @@
 # Ausführen eines Cardano Node
 
-Now that we know that our node is functioning properly we need to start it using the service so it will always run in the background
+Da wir nun wissen, dass unser Knoten ordnungsgemäß funktioniert, müssen wir ihn über den Dienst starten, damit er immer im Hintergrund läuft
 
-
-
-Create file cardano--node.service in /home/cardano and paste the following text after running the command line
+Erstellen Sie die Datei cardano--node.service in /home/cardano und fügen Sie den folgenden Text ein, nachdem Sie die Befehlszeile ausgeführt haben.
 
 \[Unit\] Description=Shelley Pioneer Pool After=multi-user.target
 
@@ -20,15 +18,13 @@ nano ~/cardano-node.service
 
 
 
-
-
-We created the file in a temporary location because Cardano user does not have rights to create a file where we want it, so Now we need to copy it in its permanent place using sudo command. 
+Wir haben die Datei an einem temporären Ort erstellt, da der Cardano-Benutzer nicht die Rechte hat, eine Datei dort zu erstellen, wo wir sie haben wollen, also müssen wir sie jetzt mit dem Sudo-Befehl an ihren permanenten Ort kopieren.
 
 ```text
 sudo cp ~/cardano-node.service /usr/lib/systemd/system
 ```
 
-Now we need to create a second file. and paste this text with your cardano port number instead of 1234 \(insert this text\)
+Nun müssen wir eine zweite Datei erstellen und diesen Text mit der Portnummer des Cardano-Knotens anstelle von 1234 einfügen \(diesen Text einfügen\)
 
 CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/cnode/config/mainnet-topology.json" DBPATH="/home/cardano/cnode/db/" SOCKETPATH="/home/cardano/cnode/sockets/node.socket" HOSTADDR="0.0.0.0" PORT="1234"
 
@@ -36,19 +32,19 @@ CONFIG="/home/cardano/cnode/config/mainnet-config.json" TOPOLOGY="/home/cardano/
 nano ~/cnode/config/cardano-node.environment
 ```
 
-Now we need to enable the cardano node
+Nun müssen wir den cardano-Node aktivieren
 
 ```text
  sudo systemctl enable cardano-node
 ```
 
-Now we need to start the node. \( to stop the node you will replace "start" with "stop"\) in the command line
+Nun müssen wir den Knoten starten. \(um den Knoten zu stoppen, ersetzen Sie "start" durch "stop"\) in der Befehlszeile
 
 ```text
  sudo systemctl start cardano-node
 ```
 
-Now we need to check the status. If everything is working correctly you will see green text "Active Running"
+Jetzt müssen wir den Status überprüfen. Wenn alles richtig funktioniert, sehen Sie den grünen Text "Active Running".
 
 ```text
  sudo systemctl status cardano-node
