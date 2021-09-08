@@ -60,13 +60,10 @@ cabal --version
 Перейдем к следующим шагам - установка GHC - компилятора кода Haskell \(Cardano, написан на Haskell \)
 
 ```bash
-mkdir -p ~/git
-cd ~/git
-
-wget https://downloads.haskell.org/ghc/8.10.2/ghc-8.10.2-x86_64-deb9-linux.tar.xz
-tar -xf ghc-8.10.2-x86_64-deb9-linux.tar.xz
-rm ghc-8.10.2-x86_64-deb9-linux.tar.xz
-cd ghc-8.10.2
+wget https://downloads.haskell.org/ghc/8.10.4/ghc-8.10.4-x86_64-deb9-linux.tar.xz
+tar -xf ghc-8.10.4-x86_64-deb9-linux.tar.xz
+rm ghc-8.10.4-x86_64-deb9-linux.tar.xz
+cd ghc-8.10.4
 ./configure
 sudo make install
 ```
@@ -79,14 +76,18 @@ ghc --version
 
 вы должны увидеть что-то вроде этого:
 
-> cardano@localhost:~$ **ghc --version**  
-> The Glorious Glasgow Haskell Compilation System, version 8.10.2
+{% hint style="info" %}
+> На этом этапе у меня произошел сбой, и после выполнения вышеуказанной команды все еще показывалась старая версия. Это было исправлено простым выходом из системы и входом в систему.
+{% endhint %}
+
+> cardano@localhost:~$ ghc --version Славная система компиляции Хаскеля из Глазго, версия 8.10.4.
 
 ## Установка  Libsodium
 
 Создадим папку git, в которой будем компилировать исходный код библиотеки libsodium:
 
 ```bash
+mkdir -p ~/git
 cd ~/git
 ```
 

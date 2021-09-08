@@ -25,26 +25,28 @@ git fetch --all --recurse-submodules --tags
 
 
 
-> cardano@localhost:~/cardano-node$ **cd** **cardano-node**  
-> cardano@localhost:~$ **git fetch --all --tags && git tag**   
-> Fetching origin  
-> .......  
-> 1.18.0  
-> 1.18.1  
-> 1.19.1  
-> .......  
-> 1.27.0
+> > cardano@localhost:~/cardano-node$ **cd** **cardano-node**  
+> > cardano@localhost:~$ **git fetch --all --tags && git tag**   
+> > Fetching origin  
+> > .......  
+> > 1.18.0  
+> > 1.18.1  
+> > 1.19.1  
+> > .......  
+> > 1.29.0
 
-\(на момент написания данной инструкции\) последняя версия Mainnet Tag - 1.27.0, так что давайте ее скачаем!
+\(на момент написания данной инструкции\) последняя версия Mainnet Tag - 1.29.0, так что давайте ее скачаем!
 
 ```text
- git checkout tags/1.27.0
+git checkout tags/1.29.0
 ```
 
 Давайте установим с помощью GHC.
 
 ```text
-cabal configure --with-compiler=ghc-8.10.2
+cabal clean
+cabal update
+cabal configure --with-compiler=ghc-8.10.4
 ```
 
 Начиная с версии 1.14.x, нам нужно добавить библиотеки libsodium на ноду Cardano, так что давайте это сделаем.
@@ -65,25 +67,28 @@ cabal build all
 
 #### Теперь нам нужно выключить сервер и сделать снэпшот машины
 
+```text
 sudo shutdown -h now
+```
 
 ![](.gitbook/assets/image%20%2817%29.png)
 
 ```text
 mkdir -p ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-cli-1.27.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.10.2/cardano-node-1.27.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+cp -p ~/git/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-cli-1.29.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
+cp -p ~/git/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.4/cardano-node-1.29.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+echo PATH="$PATH:$HOME/.local/bin/" >> $HOME/.bashrc
+source ~/.bashrc
 ```
 
 Проверим установленную версию и местоположение
 
 ```text
-which cardano-node && which cardano-cli
 cardano-node --version
 cardano-cli --version
 ```
 
-> > cardano-node 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
+> > cardano-node 1.29.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
 >
-> > cardano-cli 1.27.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
+> > cardano-cli 1.29.0 - linux-x86\_64 - ghc-8.10 git rev 8fe46140a52810b6ca456be01d652ca08fe730bf
 
