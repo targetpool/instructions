@@ -96,13 +96,6 @@ And you mark SWAP file as active
 ```text
 sudo mkswap /swapfile
 sudo swapon /swapfile
-
-```
-
-
-
-```text
-sudo swapon /swapfile
 ```
 
 Now you want to make the swap file permanent
