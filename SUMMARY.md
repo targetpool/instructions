@@ -20,6 +20,7 @@
 
 ---
 
+* [Как World Mobile и Input Output планируют предоставлять финансовые услуги.](kak-world-mobile-i-input-output-planiruyut-predostavlyat-finansovye-uslugi..md)
 * [IOHK объединяется с Европейским университетом бизнеса Люксембурга](cardanos-iohk-joins-hands-with-european-business-university-of-luxembourg-to-make-education-accessi.md)
 * [Почему покер - это возможность для Cardano](pochemu-poker-eto-vozmozhnost-dlya-cardano.md)
 * [Хоскинсон отмечает смарт-контракты Ethereum на Cardano и то, как эта компания обеспечивает их работу](khoskinson-otmechaet-smart-kontrakty-ethereum-na-cardano-i-to-kak-eta-kompaniya-obespechivaet-ikh-ra.md)
